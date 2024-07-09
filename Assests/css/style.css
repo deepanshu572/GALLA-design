@@ -396,13 +396,34 @@ body{
 .second-scroll-div p{
     font-size: 12px;
 }
-
 .mygalla_journey-box1{
     display: flex;
     /* align-items: baseline; */
     /* height: 700px; */
-    justify-content: center;
-    padding: 6rem 0px;
+    justify-content: flex-start;
+    padding: 2rem 0px;
+    background: url(../img/mygalla_rocket-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.reverse-section{
+    justify-content: flex-end;
+}
+.reverse-section .mygalla_desc{
+    border-top-left-radius: 13px;
+    border-top-right-radius: 0px;
+}
+.reverse-section .mygalla_desc p{
+    padding: 11px 10px;
+
+}
+.reverse-section .mygalla_journey-left {
+    align-items: end;
+}
+.mygalla_title h3{
+    width: 129px;
+    margin: auto;
+    text-align: center;
 }
 .mygalla_journey-left{
     display: flex;
@@ -411,7 +432,7 @@ body{
 .mygalla_title{
     background: #8dd809;
     color: #fff;
-    width: 247px;
+    width: 188px;
     padding: 10px;
     border-top-left-radius: 13px;
     border-top-right-radius: 13px;
@@ -421,18 +442,28 @@ body{
     flex-direction: column;
     box-shadow: 1px 1px 8px #d2d2d2;
     box-shadow: 1px -1px 6px #d2d2d2;
+    gap: 10px;
 }
+
 .mygalla_desc{
     background: #8dd809;
     color: #fff;
-    width: 601px;
-    padding: 10px;
+    width: 539px;
+    padding: 24px 23px;
     border-bottom-left-radius: 13px;
     border-bottom-right-radius: 13px;
     border-top-right-radius: 13px;
     box-shadow: 1px 4px 8px #d2d2d2;
 }
-
+.mygalla_title span{
+    background: #fff;
+    color: black;
+    padding: 3px 18px;
+    font-size: 12px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px #c3c3c3;
+    font-weight: 600;
+}
 .mygalla_img{
     width: 50px;
     height: 50px;
@@ -462,8 +493,16 @@ body{
     justify-content: center;
     padding: 17px;
     height: 150px;
-    top: -46px;
-    left: -307px;
+    top: -26px;
+    right: 0;
+    border-radius: 20px;
+    background: #ffff;
+}
+.reverse-section .mygalla_journey-img-wrap{
+    left: 0;
+}
+.mygalla_our-journey h2{
+    text-align:center;
 }
 .mygalla_journey-img-wrap img{
     width: 100%;
@@ -489,6 +528,9 @@ body{
     object-fit: cover;
 }
 
+.mygalla_journey-box-wrap{
+    padding: 3rem 7vw;
+}
 /* contact section */
 /* contact section */
 /* contact section */
@@ -750,5 +792,25 @@ width: 148px;
     padding: 3rem 1rem;
     flex-wrap: wrap;
     gap: 36px;
+}
+.mygalla_journey-img-wrap{
+    top: 0%;
+    /* top: -3px;
+    left: -189px */
+}
+.mygalla_journey-img-wrap{
+    width: 181px;
+    height: 149px;
+}
+.mygalla_desc{
+    width: auto;
+}
+
+.mygalla_journey-box-wrap {
+    padding: 3rem 2vw;
+}
+.mygalla_title{
+    padding: 13px 10px;
+    gap: 19px;
 }
 }
