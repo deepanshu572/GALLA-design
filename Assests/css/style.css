@@ -49,6 +49,7 @@ body{
     flex-wrap: wrap;
     padding-bottom: 2rem;
     height: 600px;
+    flex-wrap: wrap-reverse;
 }
 .product-right-section{
     width: 500px;
@@ -396,7 +397,97 @@ body{
     font-size: 12px;
 }
 
+.mygalla_journey-box1{
+    display: flex;
+    /* align-items: baseline; */
+    /* height: 700px; */
+    justify-content: center;
+    padding: 6rem 0px;
+}
+.mygalla_journey-left{
+    display: flex;
+    flex-direction: column;
+}
+.mygalla_title{
+    background: #8dd809;
+    color: #fff;
+    width: 247px;
+    padding: 10px;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 8px #d2d2d2;
+    box-shadow: 1px -1px 6px #d2d2d2;
+}
+.mygalla_desc{
+    background: #8dd809;
+    color: #fff;
+    width: 601px;
+    padding: 10px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    border-top-right-radius: 13px;
+    box-shadow: 1px 4px 8px #d2d2d2;
+}
 
+.mygalla_img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background: #fff;
+    overflow: hidden;
+}
+.mygalla_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mygalla_journey-right{
+    position: relative;
+}
+.mygalla_journey-img-wrap{
+    position: absolute;
+    box-shadow: 2px 2px 4px gray;
+    width: 293px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17px;
+    height: 150px;
+    top: -46px;
+    left: -307px;
+}
+.mygalla_journey-img-wrap img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.mygalla_img{
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background: #fff;
+    overflow: hidden;
+}
+.mygalla_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 /* contact section */
 /* contact section */
@@ -482,15 +573,57 @@ body{
     padding: 15px;
     background-color: #5E9400;
     display: flex;
-    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    color: #fff;
+    flex-wrap: wrap;
 }
 .foot-left-first-main{
     display: flex;
     align-items: center;
+    gap: 89px;
+    flex-wrap: wrap;
 }
 .foot-left-second-main{
     display: flex;
     align-items: center;
+    gap: 217px;
+    /* flex-wrap: wrap; */
+}
+.footleft3 span svg{
+    fill: #fff;
+    width: 21px;
+    height: 13px;
+}
+.footleft3{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+.foot-right{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 41px;
+    justify-content: space-around;
+}
+.top-right{
+    width: 354px;
+}
+.top-right p{
+    font-size: 14px;
+}
+.bottom-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+    width: 100%;
+    padding: 0px 10px;
+
+}
+.bottom-right-icons{
+    display: flex;
+    gap: 13px;
 }
 .bottom-right-icon1 {
     background-color: #fff;
@@ -505,7 +638,41 @@ body{
    height: 100%;
    fill: #5E9400;
 }
-@media(max-width: 600px) {
+.foot-left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 23px;
+}
+.footleft1 img{
+    width: 152px;
+}
+.footleft1 span{
+    position: relative;
+    font-size: 14px;
+    left: -90px;
+}
+.footleft1 p{
+     padding-top: 9px;
+     width: 401px;
+}
+.footleft3 a{
+    color: #fff;
+    text-decoration: none;
+}
+.footleft2 p{
+    font-size: 14px;
+    padding: 5px 0px;
+}
+
+@media(max-width: 800px) {
+    .footleft4{
+        width: 100%;
+    }
+    .product-left-text {
+        padding-left: 8vw;
+        width: 100%;
+    }
 .product-video iframe{
     width: 100%;
     height: 100%;
@@ -557,5 +724,31 @@ width: 148px;
 }
 .product-section{
     height: auto;
+}
+.footer{
+    padding: 20px 15px;
+    gap: 23px;
+}
+.foot-left{
+    gap: 27px;
+    padding: 0px;
+}
+.foot-left-first-main{
+    gap: 27px;
+}
+.foot-right{
+    gap: 41px;
+}
+.foot-left-second-main{
+    gap: 27px;
+    flex-wrap: wrap;
+}
+.footleft1 p{
+    width: auto;
+}
+.product-video-form{
+    padding: 3rem 1rem;
+    flex-wrap: wrap;
+    gap: 36px;
 }
 }
