@@ -3,6 +3,12 @@
     font-family: nirmala;
     src: url(../font/Nirmala.ttf);
 }
+:root{
+    --theme-color: #ab1446;
+    --theme-color1: #5e9400;
+    --theme-color: #41d70b;
+    --theme-color: #35a40c;
+}
 *{
     margin: 0%;
     padding: 0%;
@@ -21,7 +27,7 @@ body{
     overflow: hidden;
 }
 .nav{
-    background: #5e9400;
+    background: var(--theme-color1);
     /* background: #70ab0a;  */
     padding: 10px 66px;
     display: flex;
@@ -69,10 +75,10 @@ body{
     font-size: 50px;
 }
 .product-left-text b{
-    color: #5e9400;
+    color: var(--theme-color1);
 }
 .product-left-text button{
-    background-color: #5E9400;
+    background-color: var(--theme-color1);
     padding: 8px 23px;
     color: #fff;
     border: none;
@@ -87,7 +93,7 @@ body{
 }
 .product-form{
     background-color: #eff4e6;
-    box-shadow: 0px 2px 25px 0px #5E940040;
+    box-shadow: 0px 2px 25px 0px var(--theme-color1)40;
     padding: 30px 10px;
     width: 380px;
 }
@@ -104,7 +110,7 @@ body{
     font-weight: 900;
 }
 .product-form form b{
-   color: #5e9400;
+   color: var(--theme-color1);
 }
 .product-form form .inp1{
     display: flex;
@@ -131,7 +137,7 @@ body{
     outline: none;
 }
 .product-form form button{
-    background-color: #5E9400;
+    background-color: var(--theme-color1);
     padding: 10px;
     color: #fff;
     border: none;
@@ -148,7 +154,7 @@ body{
 }
 .bottom-text a{
     text-decoration: none;
-    color: #5E9400;
+    color: var(--theme-color1);
 }
 .why-galla{
     text-align: center;
@@ -159,7 +165,7 @@ body{
     justify-content: space-around;
     width: 100%;
     /* gap: 85px; */
-    background-color: #5E9400;
+    background-color: var(--theme-color1);
     padding: 53px 64px;
     flex-wrap: wrap;
 }
@@ -195,7 +201,7 @@ body{
     font-size: 40px;
 }
 .why-galla h2 b{
-  color: #5E9400;
+  color: var(--theme-color1);
 }
 .what-galla {
     padding: 3rem 0px;
@@ -205,7 +211,7 @@ body{
       font-size: 40px;
 }
 .what-galla b{
-    color: #5E9400;
+    color: var(--theme-color1);
 }
 .what-galla p{
       text-align: center;
@@ -235,7 +241,7 @@ body{
    text-align: start;
 }
 .left-text-galla button{
-    background-color: #5E9400;
+    background-color: var(--theme-color1);
     padding: 10px 15px;
     color: #fff;
     border: none;
@@ -254,7 +260,7 @@ body{
     height: 100%;
 }
 .text-img{
-    border: 2px solid #5E9400;
+    border: 2px solid var(--theme-color1);
     border-radius: 50%;
     overflow: hidden;
     width: 70px;
@@ -285,7 +291,7 @@ body{
     left: 0;
 }
 .text-galla-head h3{
-    color: #5E9400;
+    color: var(--theme-color1);
 }
 .box-galla{
     display: flex;
@@ -298,7 +304,7 @@ body{
     align-items: center;
     width: 116px;
     justify-content: center;
-    box-shadow: 0px 4px 25px 0px #5E940040;
+    box-shadow: 0px 4px 25px 0px var(--theme-color1)40;
     border-radius: 5px;
     overflow: hidden;
 
@@ -345,7 +351,7 @@ body{
 .bottom-detail p{
     font-size: 11px;
     font-weight: 700;
-    color: #5e9400;
+    color: var(--theme-color1);
 }
 .coustomer-support{
     display: flex;
@@ -359,29 +365,27 @@ body{
     font-size: 30px;
 }
 .coustomer-support b{
-    color: #5e9400;
+    color: var(--theme-color1);
 }
 .support-yt{
     padding-top: 13px;
 }
 .scroller1-box {
     width: 290px;
-    /* height: 200px; */
     border-radius: 0px 20px 0px 20px;
-    box-shadow: 0px 4px 25px 0px #5E940040;
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
+    box-shadow: 0px 4px 25px 0px #00800069;
     padding: 10px;
-    gap: 6px;
+    display: inline-block;
+    white-space: normal;
 }
 
 .scroller-review{
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
     padding: 2rem 0px;
+    height: 180px;
+    overflow: scroll;
+    overflow: scroll;
+    white-space: nowrap;
 }
 .first-scroll-div{
     display: flex;
@@ -395,6 +399,11 @@ body{
 }
 .second-scroll-div p{
     font-size: 12px;
+}
+.second-scroll-div{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
 }
 .mygalla_journey-box1{
     display: flex;
@@ -430,7 +439,7 @@ body{
     flex-direction: column;
 }
 .mygalla_title{
-    background: #8dd809;
+    background: var(--theme-color1);
     color: #fff;
     width: 188px;
     padding: 10px;
@@ -446,7 +455,7 @@ body{
 }
 
 .mygalla_desc{
-    background: #8dd809;
+    background: var(--theme-color1);
     color: #fff;
     width: 539px;
     padding: 24px 23px;
@@ -487,12 +496,12 @@ body{
 .mygalla_journey-img-wrap{
     position: absolute;
     box-shadow: 2px 2px 4px gray;
-    width: 293px;
+    width: 333px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 17px;
-    height: 150px;
+    height: 168px;
     top: -26px;
     right: 0;
     border-radius: 20px;
@@ -501,9 +510,18 @@ body{
 .reverse-section .mygalla_journey-img-wrap{
     left: 0;
 }
-.mygalla_our-journey h2{
+.mygalla_our-journey h1{
     text-align:center;
+    font-weight: 900;
 }
+.mygalla_our-journey h1 b{
+   color: #5e9400;
+}
+.mygalla_journey-img-wrap iframe{
+    width: 100%;
+    height: 100%;
+}
+
 .mygalla_journey-img-wrap img{
     width: 100%;
     height: 100%;
@@ -541,14 +559,14 @@ body{
     box-shadow: 2px 2px 4px gray;
     border-radius: 50%;
     padding: 8px;
-    /* fill: #5E9400; */
+    /* fill: var(--theme-color1); */
 
 
 }
 .contact-detail1 svg{
     width: 100%;
     height: 100%;
-    fill: #5E9400;
+    fill: var(--theme-color1);
 
 
 }
@@ -558,7 +576,7 @@ body{
     gap: 9px;
 }
 .contact-detail1 span h3{
-    color: #5E9400;
+    color: var(--theme-color1);
 }
 .contact-detail1 span a{
     color: black;
@@ -605,7 +623,7 @@ body{
 .contact-section h2{
     font-size: 32px;
     font-weight: 800;
-    color: #5E9400;
+    color: var(--theme-color1);
 
 }
 .contact-section b{
@@ -613,7 +631,7 @@ body{
 }
 .footer{
     padding: 15px;
-    background-color: #5E9400;
+    background-color: var(--theme-color1);
     display: flex;
     justify-content: space-between;
     color: #fff;
@@ -678,7 +696,7 @@ body{
 .bottom-right-icon1 svg {
    width: 100%;
    height: 100%;
-   fill: #5E9400;
+   fill: var(--theme-color1);
 }
 .foot-left{
     display: flex;
@@ -705,6 +723,9 @@ body{
 .footleft2 p{
     font-size: 14px;
     padding: 5px 0px;
+}
+.mygalla_our-journey{
+    padding: 1rem 0px;
 }
 
 @media(max-width: 800px) {
