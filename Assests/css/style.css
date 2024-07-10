@@ -14,6 +14,8 @@
     /* --theme-color1:#7FFF00; reject */
     
     --theme-color1:  #43ab13;   
+    /* --theme-color1:  #386641; */
+      
     
     /* --theme-color1: #006400; maja nhi aaya */
     
@@ -106,7 +108,7 @@ body{
 }
 .product-form{
     background-color: #eff4e6;
-    box-shadow: 0px 2px 25px 0px var(--theme-color1)40;
+    box-shadow: 0px 2px 25px 0px #5E940040;
     padding: 30px 10px;
     width: 380px;
 }
@@ -292,7 +294,8 @@ body{
     height: 400px;
     width: 400px;
     position: absolute;
-    border: 45px solid #eff4e6;
+    border: 45px solid #43AB131A;
+
     padding: 30px;
     border-radius: 50%;
     left: -333px;
@@ -317,7 +320,7 @@ body{
     align-items: center;
     width: 116px;
     justify-content: center;
-    box-shadow: 0px 4px 25px 0px var(--theme-color1)40;
+    box-shadow: 0px 4px 25px 0px #5E940040;
     border-radius: 5px;
     overflow: hidden;
 
@@ -403,7 +406,7 @@ body{
 } */
  
 .scroller-review{
-        width: 90%;
+        /* width: 90%;
         max-width: 1536px;
         margin-inline: auto;
         position: relative;
@@ -417,7 +420,7 @@ body{
           rgba(0, 0, 0, 1) 20%,
           rgba(0, 0, 0, 1) 80%,
           rgba(0, 0, 0, 0)
-        );
+        ); */
 }
 
 
@@ -428,15 +431,15 @@ body{
   }
   
   .scroller1-box {
-    position: absolute;
+    /* position: absolute;
     left: max(calc(290px * 8), 100%);
     animation-name: scrollLeft;
     animation-duration: 30s;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
   }
   
-  .item1 {
+  /* .item1 {
     animation-delay: calc(30s / 8 * (8 - 1) * -1);
   }
   
@@ -466,9 +469,136 @@ body{
   
   .item8 {
     animation-delay: calc(30s / 8 * (8 - 8) * -1);
-  }
+  
+  } */
 
 
+
+
+  
+  .slider {
+    width: 800px;
+    /* height: 500px; */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.imgs_slides {
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+/* We have to set display: none;
+  If not, all of our images would 
+  be visible at the same time */
+.imgs_slides input {
+    display: none;
+}
+
+.slide {
+    transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
+    margin: 10px;
+}
+/* css for slide navigation */
+.navigation {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-btn {
+    border: 2px solid var(--theme-color1);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.navigation-btn:hover {
+    background: var(--theme-color1);
+}
+
+
+
+#radio1:checked~.first {
+    margin-left: 1%;
+}
+
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+#radio5:checked~.first {
+    margin-left: -92%;
+}
+
+#radio6:checked~.first {
+    margin-left: 1%;
+}
+
+
+#radio7:checked~.first {
+    margin-left: -98%;
+}
+
+#radio8:checked~.first {
+    margin-left: -198%;
+}
+
+#radio9:checked~.first {
+    margin-left: -298%;
+}
+
+#radio10:checked~.first {
+    margin-left: -398%;
+}
+
+.mygalla_our-client-box-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+}
+
+
+
+.mygalla_our-clients{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mygalla_our-clients .slider{
+    width: 900px;
+}
+.mygalla_our-client-box1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 17px 17px;
+    width: 135px;
+}
+.mygalla_our-client-box1 p {
+    color: var(--theme-color1);
+    font-size: 12px;
+    font-weight: 600;
+}
 .first-scroll-div{
     display: flex;
     align-items: center;
@@ -598,7 +728,7 @@ body{
     font-weight: 900;
 }
 .mygalla_our-journey h1 b{
-   color: #5e9400;
+   color: var(--theme-color1);
 }
 .mygalla_journey-img-wrap iframe{
     width: 100%;
@@ -729,7 +859,7 @@ body{
 .foot-left-second-main{
     display: flex;
     align-items: center;
-    gap: 217px;
+    gap: 204px;
     /* flex-wrap: wrap; */
 }
 .footleft3 span svg{
@@ -819,6 +949,12 @@ body{
     box-shadow: 0px 4px 25px 0px #5E940040;
     background: #EEEEEE;
 
+}
+.mygalla_our-clients h1{
+     text-align: center;
+}
+.mygalla_our-clients b{
+    color: var(--theme-color1);
 }
 @media(max-width: 800px) {
     .footleft4{
@@ -926,4 +1062,44 @@ width: 148px;
     padding: 13px 10px;
     gap: 19px;
 }
+.scroller-review {
+    width: 100%;
+}
+.slider {
+    width: 100%;
+}
+.imgs_slides{
+    width: 100%;
+}
+.navigation{
+    width: 100%;
+}
+.mygalla_our-client-box-wrap{
+    flex-wrap: wrap;
+    width: 43vw;
+    height: 211px;
+    margin: auto;
+}
+
+#radio6:checked~.first {
+    margin-left: 1%;
+}
+
+
+#radio7:checked~.first {
+    margin-left: -98%;
+}
+
+#radio8:checked~.first {
+    margin-left: -198%;
+}
+
+#radio9:checked~.first {
+    margin-left: -298%;
+}
+
+#radio10:checked~.first {
+    margin-left: -398%;
+}
+
 }
