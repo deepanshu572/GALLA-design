@@ -1076,13 +1076,13 @@ width: 148px;
 }
 .mygalla_our-client-box-wrap{
     flex-wrap: wrap;
-    width: 43vw;
+    width: 97vw;
     height: 211px;
     margin: auto;
 }
 
 #radio6:checked~.first {
-    margin-left: 1%;
+    margin-left: 40%;
 }
 
 
@@ -1101,5 +1101,14 @@ width: 148px;
 #radio10:checked~.first {
     margin-left: -398%;
 }
-
+/* .imgs_slides {
+    height: 400px;
+    display: flex;
+    align-items: unset;
+    padding: 14px;
+    justify-content: center;
+} */
+.imgs_slides{
+    overflow-x: scroll;
+}
 }
