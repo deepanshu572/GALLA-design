@@ -2,12 +2,25 @@
 @font-face {
     font-family: nirmala;
     src: url(../font/Nirmala.ttf);
+    /* font-weight: bolder; */
 }
 :root{
-    --theme-color: #ab1446;
-    --theme-color1: #5e9400;
-    --theme-color: #41d70b;
-    --theme-color: #35a40c;
+    /* --theme-color: #ab1446;
+    --theme-color: #5e9400; */
+
+
+    /* --theme-color:#6B8E23; */
+    
+    /* --theme-color1:#7FFF00; reject */
+    
+    --theme-color1:  #43ab13;   
+    
+    /* --theme-color1: #006400; maja nhi aaya */
+    
+    /* --theme-color1: #0B7F1E; */
+    
+    /* --theme-color: #41d70b;
+    --theme-color: #35a40c; */
 }
 *{
     margin: 0%;
@@ -373,20 +386,89 @@ body{
 .scroller1-box {
     width: 290px;
     border-radius: 0px 20px 0px 20px;
-    box-shadow: 0px 4px 25px 0px #00800069;
+    box-shadow: 0px 4px 25px 0px #5E940040;
     padding: 10px;
     display: inline-block;
     white-space: normal;
+    height: 140px;
 }
 
-.scroller-review{
+/* .scroller-review{
     width: 100%;
     padding: 2rem 0px;
-    height: 180px;
     overflow: scroll;
     overflow: scroll;
     white-space: nowrap;
+    
+} */
+ 
+.scroller-review{
+        width: 90%;
+        max-width: 1536px;
+        margin-inline: auto;
+        position: relative;
+        height: 200px;
+        margin: 2rem;
+        padding: 20px;
+        overflow: hidden;
+        mask-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 1) 20%,
+          rgba(0, 0, 0, 1) 80%,
+          rgba(0, 0, 0, 0)
+        );
 }
+
+
+@keyframes scrollLeft {
+    to {
+      left: -200px;
+    }
+  }
+  
+  .scroller1-box {
+    position: absolute;
+    left: max(calc(290px * 8), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  .item1 {
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
+  }
+  
+  .item2 {
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
+  }
+  
+  .item3 {
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
+  }
+  
+  .item4 {
+    animation-delay: calc(30s / 8 * (8 - 4) * -1);
+  }
+  
+  .item5 {
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
+  }
+  
+  .item6 {
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
+  }
+  
+  .item7 {
+    animation-delay: calc(30s / 8 * (8 - 7) * -1);
+  }
+  
+  .item8 {
+    animation-delay: calc(30s / 8 * (8 - 8) * -1);
+  }
+
+
 .first-scroll-div{
     display: flex;
     align-items: center;
@@ -470,7 +552,8 @@ body{
     padding: 3px 18px;
     font-size: 12px;
     border-radius: 4px;
-    box-shadow: 2px 2px 2px #c3c3c3;
+    /* box-shadow: 2px 2px 2px #c3c3c3; */
+    box-shadow: 2px 2px 4px #606060ad;
     font-weight: 600;
 }
 .mygalla_img{
@@ -728,6 +811,15 @@ body{
     padding: 1rem 0px;
 }
 
+
+
+
+
+.mygalla_our-client-box1{
+    box-shadow: 0px 4px 25px 0px #5E940040;
+    background: #EEEEEE;
+
+}
 @media(max-width: 800px) {
     .footleft4{
         width: 100%;
