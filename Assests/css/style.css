@@ -73,7 +73,7 @@ body{
     flex-wrap: wrap-reverse;
 }
 .product-right-section{
-    width: 500px;
+    width: 550px;
 }
 .product-right-section img{
     width: 100%;
@@ -87,7 +87,10 @@ body{
     gap: 17px;
 }
 .product-left-text h2{
-    font-size: 50px;
+    font-size: 59px;
+}
+.product-left-text p{
+    font-size: 18px;
 }
 .product-left-text b{
     color: var(--theme-color1);
@@ -1108,7 +1111,36 @@ width: 148px;
     padding: 14px;
     justify-content: center;
 } */
+
 .imgs_slides{
     overflow-x: scroll;
 }
+
+.mygalla_our-client-box-wrap{
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
+
+#radio6:checked~.first {
+    margin-left: 1%;
+}
+
+#radio7:checked~.first {
+    margin-left: -98%;
+}
+
+#radio8:checked~.first {
+    margin-left: -198%;
+}
+
+#radio9:checked~.first {
+    margin-left: -298%;
+}
+
+#radio10:checked~.first {
+    margin-left: -398%;
+}
+}
+
+
+
