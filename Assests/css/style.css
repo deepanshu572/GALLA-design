@@ -1242,24 +1242,24 @@ width: 148px;
     font-size: 17px;
 } */
 .support-h2{
-    font-size: 37px !important;
+    /* font-size: 37px !important; */
  }
 .support-p{
-    font-size: 21px;
+    /* font-size: 21px; */
     width: 356px;
     padding: 10px 0px;
 }
 .reverse-section .mygalla_desc p{
     font-size: 17px;
 }
-.ancor-demo{
+.ancor-demo {
     color: #fff !important;
     border-radius: 30px !important;
     padding: 0 !important;
     rotate: 0deg !important;
     height: 50px !important;
     font-size: 23px;
-    width: 211px !important;
+    width: 178px !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1270,6 +1270,7 @@ width: 148px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 18px;
 }
 .foot-last .ancor-wrap{
     padding: 0px !important;
@@ -1287,8 +1288,9 @@ width: 148px;
     z-index: 9;
 }
 .foot-last-icon1 a{
-    width: 52px;
-    height: 52px;
+    width: 42px;
+    height: 42px;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1301,7 +1303,21 @@ width: 148px;
     width: 35px;
     height: 35px;
 }
+.foot-last{
+    display: none;
 }
+@media(max-width: 375px) {
+    .mygalla_title{
+        width: 164px !important;
+
+    }
+    .foot-last{
+        display: flex;
+    }
+}
+}
+
+
 
 
 
