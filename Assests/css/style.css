@@ -1306,7 +1306,7 @@ width: 148px;
 .foot-last{
     display: none;
 }
-@media(max-width: 375px) {
+@media(max-width: 500px) {
     .mygalla_title{
         width: 164px !important;
 
