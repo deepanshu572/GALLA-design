@@ -1036,6 +1036,13 @@ body{
 .mygalla_our-clients b{
     color: var(--theme-color1);
 }
+.mygalla_our-client-img{
+    width: 65px;
+}
+.mygalla_our-client-img svg{
+    width: 100%;
+    height: 100%;
+}
 @media(max-width: 800px) {
     .footleft4{
         width: 100%;
@@ -1137,7 +1144,8 @@ width: 148px;
     left: -189px */
 }
 .mygalla_journey-img-wrap{
-    width: 181px;
+
+    width: 175px;
     height: 149px;
 }
 .mygalla_desc{
