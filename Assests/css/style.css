@@ -949,8 +949,8 @@ body{
     padding-bottom: 9px;
 }
 .footleft1 svg{
-    width: 147px;
-    height: 66px;
+    width: 165px;
+    height: 64px;
 }
 /* .footleft1 img{
     width: 152px;
@@ -961,7 +961,8 @@ body{
 .footleft1 span{
     position: relative;
     font-size: 14px;
-    left: -90px;
+    left: -97px;
+    top: -6px;
 }
 .footleft1 p{
      padding-top: 9px;
@@ -1201,6 +1202,9 @@ width: 148px;
     grid-template-columns: auto auto auto;
 } */
 
+.mygalla_our-clients .first {
+    margin-left: 31%;
+}
 #radio6:checked~.first {
     margin-left: 31%;
 }
@@ -1214,18 +1218,21 @@ width: 148px;
 }
 
 #radio9:checked~.first {
-    margin-left: -250%;
+    margin-left: -227%;
 }
 .bottom-detail p{
     font-size: 15px;
+}
+.mob{
+    display: none;
 }
 .img-top-wrap{
     width: 60px;
     height: 60px;
 }
 .product-video{
-    width: 400px;
-    height: 191px;
+    width: 382px;
+    height: 217px;
 }
 /* .product-form form .inp1{
     gap: 5px;
@@ -1329,9 +1336,80 @@ width: 148px;
         display: flex;
     }
 }
+
+
+#radio1:checked~.first {
+    margin-left: 4%;
+}
+
+
+#radio2:checked~.first {
+    margin-left: -78%;
+}
+
+#radio3:checked~.first {
+    margin-left: -128%;
+}
+
+#radio4:checked~.first {
+   margin-left: -228%;
+}
+
 }
 
 
 
 
 
+
+
+
+
+/* BUY NOW PAGE CSS */
+
+.mygalla_buy_hero_section{
+    padding: 3rem;
+    padding-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #43AB131A;
+    padding-right: 0px;
+}
+.mygalla_buy_left-_section{
+    width: 572px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.mygalla_buy_left-_section h1{
+    font-size: 41px;
+}
+.mygalla_buy_left-_section h1 b{
+    color: #43AB13;
+
+}
+.mygalla_buy_left-_section p{
+    font-size: 16px;
+}
+.mygalla_buy_right-_section{
+    width: 580px;
+}
+.mygalla_buy_right-_section svg{
+    width:100%;
+    height:100%;
+}
+.mygalla_buy_btns button{
+    background: #43AB13;
+    border: none;
+    padding: 8px 13px;
+    color: #fff;
+    border-radius: 7px;
+}
+.mygalla_buy_buisness_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
