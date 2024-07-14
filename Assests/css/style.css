@@ -145,6 +145,7 @@ body{
     padding: 8px;
     width: 313px;
     outline: none;
+    color: #777777;
 }
 .product-form form .inp1 select{
     border: none;
@@ -153,6 +154,7 @@ body{
     padding: 8px;
     width: 313px;
     outline: none;
+    color: #777777;
 }
 .product-form form button{
     background-color: var(--theme-color1);
@@ -204,10 +206,14 @@ body{
     padding: 6px;
     overflow: hidden;
 }
-.galla-img img {
+.galla-img svg {
     width: 100%;
     height: 100%;
 }
+/* .galla-img img {
+    width: 100%;
+    height: 100%;
+} */
 .galla-text {
     color: #fff;
 }
@@ -286,10 +292,14 @@ body{
     padding: 12px;
     background: #fff;
 }
-.text-img img{
+.text-img svg{
     width: 100%;
     height: 100%;
 }
+/* .text-img img{
+    width: 100%;
+    height: 100%;
+} */
 .circle-div{
     position: relative;
 }
@@ -350,7 +360,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 26px;
+    padding: 26px 10px;
     gap: 64px;
     flex-wrap: wrap;
 
@@ -364,10 +374,14 @@ body{
     padding: 12px;
     background: #fff;
 }
-.img-top-wrap img{
+.img-top-wrap svg{
     width: 100%;
     height: 100%;
 }
+/* .img-top-wrap img{
+    width: 100%;
+    height: 100%;
+} */
 .bottom-detail p{
     font-size: 12px;
     font-weight: 700;
@@ -548,30 +562,25 @@ body{
     margin-left: -60%;
 }
 
-#radio5:checked~.first {
-    margin-left: -92%;
-}
+
 
 #radio6:checked~.first {
-    margin-left: 1%;
+    margin-left: 0%;
 }
 
 
 #radio7:checked~.first {
-    margin-left: -98%;
+    margin-left: -40%;
 }
 
 #radio8:checked~.first {
-    margin-left: -198%;
+    margin-left: -60%;
 }
 
 #radio9:checked~.first {
-    margin-left: -298%;
+    margin-left: -80%;
 }
 
-#radio10:checked~.first {
-    margin-left: -398%;
-}
 
 .mygalla_our-client-box-wrap {
     display: flex;
@@ -730,8 +739,8 @@ body{
     align-items: center;
     justify-content: center;
     padding: 17px;
-    height: 168px;
-    top: -26px;
+    height: 157px;
+    top: -5px;
     right: 0;
     border-radius: 20px;
     background: #ffff;
@@ -938,9 +947,13 @@ body{
 .footleft4 h2{
     padding-bottom: 9px;
 }
-.footleft1 img{
-    width: 152px;
+.footleft1 svg{
+    width: 147px;
+    height: 66px;
 }
+/* .footleft1 img{
+    width: 152px;
+} */
 .footleft1{
     height: 100%;
 }
@@ -967,22 +980,29 @@ body{
 
 
 .foot-last-icon1{
-      width: 100%;
+      width: auto;
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 0px 7px;
       padding-bottom: 7px;
 
-
+}
+.ancor-wrap{
+    width: 100%;
 }
 .foot-last-icon1 a{
     color: #fff;
-    background-color: #17cc2e;
-    padding: 7px 9px;
+    /* background-color: #17cc2e; */
+    /* padding: 7px 9px; */
     width: 34px;
     height: 34px;
     border-radius: 50%;
     text-decoration: none;
+}
+.foot-last-icon1 svg{
+    width: 100%;
+    height: 100%;
 }
 .ancor-demo{
     width: auto !important;
@@ -1037,7 +1057,8 @@ body{
 }
 .after-galla-detail-wrap {
     /* gap :49px; */
-    gap: 23px;
+    /* gap: 23px; */
+    gap: 8vw;
 }
 .detail-gala-box{
 gap: 12px;
@@ -1125,7 +1146,7 @@ width: 148px;
 }
 
 .mygalla_journey-box-wrap {
-    padding: 3rem 2vw;
+    padding: 1rem 2vw;
 }
 .mygalla_title{
     padding: 13px 10px;
@@ -1142,11 +1163,13 @@ width: 148px;
 }
 .navigation{
     width: 100%;
+    left: 0px;
+
 }
 .mygalla_our-client-box-wrap{
-    flex-wrap: wrap;
-    width: 97vw;
-    height: 211px;
+    /* flex-wrap: wrap; */
+    /* width: 97vw; */
+    /* height: 211px; */
     margin: auto;
 }
 
@@ -1182,29 +1205,25 @@ width: 148px;
     overflow-x: scroll;
 }
 
-.mygalla_our-client-box-wrap{
+/* .mygalla_our-client-box-wrap{
     display: grid;
     grid-template-columns: auto auto auto;
-}
+} */
 
 #radio6:checked~.first {
-    margin-left: 1%;
+    margin-left: 31%;
 }
 
 #radio7:checked~.first {
-    margin-left: -98%;
+    margin-left: -50%;
 }
 
 #radio8:checked~.first {
-    margin-left: -198%;
+    margin-left: -150%;
 }
 
 #radio9:checked~.first {
-    margin-left: -298%;
-}
-
-#radio10:checked~.first {
-    margin-left: -398%;
+    margin-left: -250%;
 }
 .bottom-detail p{
     font-size: 15px;
@@ -1296,8 +1315,8 @@ width: 148px;
     justify-content: center;
 }
 .foot-last-icon1 a svg{
-    width: 29px;
-    height: 29px;
+    width: 39px;
+    height: 39px;
 }
 .bottom-right-icon1{
     width: 35px;
