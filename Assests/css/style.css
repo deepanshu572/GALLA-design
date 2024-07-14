@@ -114,6 +114,7 @@ body{
     box-shadow: 0px 2px 25px 0px #5E940040;
     padding: 30px 10px;
     width: 380px;
+    
 }
 .product-form form{
     width: 100%;
@@ -559,7 +560,7 @@ body{
 }
 
 #radio4:checked~.first {
-    margin-left: -60%;
+    margin-left: -54%;
 }
 
 
@@ -1174,6 +1175,7 @@ width: 148px;
     left: 0px;
 
 }
+
 .mygalla_our-client-box-wrap{
     /* flex-wrap: wrap; */
     /* width: 97vw; */
@@ -1181,26 +1183,7 @@ width: 148px;
     margin: auto;
 }
 
-#radio6:checked~.first {
-    margin-left: 40%;
-}
 
-
-#radio7:checked~.first {
-    margin-left: -98%;
-}
-
-#radio8:checked~.first {
-    margin-left: -198%;
-}
-
-#radio9:checked~.first {
-    margin-left: -298%;
-}
-
-#radio10:checked~.first {
-    margin-left: -398%;
-}
 /* .imgs_slides {
     height: 400px;
     display: flex;
@@ -1301,6 +1284,7 @@ width: 148px;
 }
 .foot-last .ancor-wrap{
     padding: 0px !important;
+    justify-content: flex-end;
 }
 .foot-last{
     position: fixed;
@@ -1332,6 +1316,9 @@ width: 148px;
 }
 .foot-last{
     display: none;
+}
+.product-form{
+    width: 415px;
 }
 @media(max-width: 500px) {
     .mygalla_title{
