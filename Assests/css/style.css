@@ -207,14 +207,14 @@ body{
     padding: 6px;
     overflow: hidden;
 }
-.galla-img svg {
-    width: 100%;
-    height: 100%;
-}
-/* .galla-img img {
+/* .galla-img svg {
     width: 100%;
     height: 100%;
 } */
+.galla-img img {
+    width: 100%;
+    height: 100%;
+}
 .galla-text {
     color: #fff;
 }
@@ -293,14 +293,14 @@ body{
     padding: 12px;
     background: #fff;
 }
-.text-img svg{
-    width: 100%;
-    height: 100%;
-}
-/* .text-img img{
+/* .text-img svg{
     width: 100%;
     height: 100%;
 } */
+.text-img img{
+    width: 100%;
+    height: 100%;
+}
 .circle-div{
     position: relative;
 }
@@ -374,6 +374,9 @@ body{
     overflow: hidden;
     padding: 12px;
     background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .img-top-wrap svg{
     width: 100%;
@@ -587,7 +590,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 13px;
+    gap: 11px;
 }
 
 
@@ -740,8 +743,11 @@ body{
     align-items: center;
     justify-content: center;
     padding: 17px;
-    height: 157px;
-    top: -5px;
+    /* height: 157px;
+    top: -5px; */
+    height: 145px;
+    top: 3px;
+
     right: 0;
     border-radius: 20px;
     background: #ffff;
@@ -1077,7 +1083,7 @@ width: 148px;
     width: 98px;
 }
 .galla-text small {
-    font-size: 15px;
+    font-size: 13px;
 }
 .detail-galla{
     padding: 35px 9px;
@@ -1218,7 +1224,7 @@ width: 148px;
 }
 
 #radio9:checked~.first {
-    margin-left: -227%;
+    margin-left: -223%;
 }
 .bottom-detail p{
     font-size: 15px;
