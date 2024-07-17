@@ -1387,10 +1387,86 @@ body {
     justify-content: center;
     padding: 2rem 4px;
 }
+.mygalla_buy_plan_box{
+    display: flex;
+    gap: 65px;
+    padding: 35px 0px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.mygalla_buy_plan1{
+    background: #f4ffe2;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.mygalla_buy_head1{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 21px;
+}
+.mygalla_buy_head_img{
+    box-shadow: 2px 2px 3px gray;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+}
+.mygalla_buy_head2 {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding-bottom: 7px;
+    align-items: center;
+}
+.mygalla_buy_img1 {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+}
+.head-small{
+    padding: 10px;
+}
+.mygalla_buy_plan1 b{
+    color: #000 !important;
+    font-size: 15px;
+}
+.mygalla_buy_plan1 button{
+    margin: 11px 0px;
+    background: #43ab13;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    padding: 8px;
+    width: 194px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 4px #dfdfdf;
+    font-size: 16px;
+}
+.mygalla_buy_plan1 h2{
+    font-size: 18px;
+}
+.mygalla_buy_head1 h2{
+    font-size: 21px;
+}
+.span-head{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+}
+.span-head del{
+    font-size: 13px;
+}
 @media(max-width:500px) {
     .mygalla_buy_plans{
     padding: 2rem 4px;
-    padding-top: 0;
+    /* padding-top: 0; */
     }
     .mygalla_buy_hero_section {
         padding: 4rem 0 1rem 1rem
