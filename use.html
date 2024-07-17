@@ -1,0 +1,111 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* img { display: block; margin: 1em 0; }
+  .fail img { display: none; }
+  pre { border: 2px solid red; }
+  .fail pre { border-color: red; background: pink; }
+  .pass pre { border-color: darkgreen; background: lightgreen; } */
+  .card{
+ opacity: 0;
+ border: 1px solid gray;
+ padding: 7rem;
+ margin-bottom: 30px;
+  }
+  .show{
+   opacity: 1;
+  }
+</style>
+<body>
+
+  <img class="card show" loading='lazy' src='https://static.vecteezy.com/system/resources/thumbnails/025/067/762/small_2x/4k-beautiful-colorful-abstract-wallpaper-photo.jpg' width='499' height='499' alt=''>
+<img class="card" loading='lazy' src='https://static.vecteezy.com/system/resources/thumbnails/025/067/762/small_2x/4k-beautiful-colorful-abstract-wallpaper-photo.jpg' width='499' height='499' alt=''>
+<img class="card" loading='lazy' src='https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAzL3JtNTk3ZGVzaWduLWMtc2F2ZS0wMDIuanBn.jpg' width='499' height='499' alt=''>
+<img class="card" loading='lazy' src='https://static.vecteezy.com/system/resources/thumbnails/025/067/762/small_2x/4k-beautiful-colorful-abstract-wallpaper-photo.jpg' width='499' height='499' alt=''>
+<img class="card" loading='lazy' src='https://w0.peakpx.com/wallpaper/123/54/HD-wallpaper-scenery-lake-nature-sky-tree-water.jpg' width='499' height='499' alt=''>
+<img class="card" loading='lazy' src='https://static.vecteezy.com/system/resources/previews/032/242/170/non_2x/beautiful-waterfall-flowers-water-nature-waterfall-hd-wallpaper-ai-generated-free-photo.jpg' width='499' height='499' alt=''>
+<img class="card" loading='lazy' src='https://img.freepik.com/free-photo/snowy-mountain-peak-starry-galaxy-majesty-generative-ai_188544-9650.jpg' width='499' height='499' alt=''>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+<div class="card">Some Text</div>
+
+
+  <script>
+    const cards = document.querySelectorAll(".card");
+const observer = new IntersectionObserver(
+(obj) => {
+console.log(obj);
+obj.forEach((item) => {
+item.target.classList.toggle("show", item.isIntersecting)
+});
+},
+{
+threshold: 0.5
+}
+);
+cards.forEach((card) => {
+observer.observe (card);
+});
+  </script>
+
+</body>
+</html>
