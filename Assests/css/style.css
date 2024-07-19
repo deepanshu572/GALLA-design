@@ -496,7 +496,7 @@ body {
 }
 
 #radio3:checked~.first,
-#radio7:checked~.first {
+#radio7:checked~.second {
     margin-left: -40%
 }
 
@@ -504,15 +504,15 @@ body {
     margin-left: -54%
 }
 
-#radio6:checked~.first {
+#radio6:checked~.second {
     margin-left: 0
 }
 
-#radio8:checked~.first {
+#radio8:checked~.second {
     margin-left: -60%
 }
 
-#radio9:checked~.first {
+#radio9:checked~.second {
     margin-left: -80%
 }
 
@@ -938,13 +938,17 @@ body {
     align-items: center;
     justify-content: center
 }
-
+.scroller-review .navigation{
+    width: 800px;
+}
 @media(max-width:800px) {
     /* .product-right-section{
         width: 550px;
         height: 237px;
     } */
-
+    .scroller-review .navigation{
+        width: 100%;
+    }
     .footleft4,
     .imgs_slides,
     .scroller-review,
@@ -1093,20 +1097,23 @@ body {
         overflow-x: scroll
     }
 
-    #radio6:checked~.first,
+    
     .mygalla_our-clients .first {
         margin-left: 31%
     }
+    #radio6:checked~.second{
+        margin-left: 31%
+    }
 
-    #radio7:checked~.first {
+    #radio7:checked~.second {
         margin-left: -50%
     }
 
-    #radio8:checked~.first {
+    #radio8:checked~.second {
         margin-left: -150%
     }
 
-    #radio9:checked~.first {
+    #radio9:checked~.second {
         margin-left: -223%
     }
 
@@ -1222,7 +1229,7 @@ body {
     }
 
     #radio4:checked~.first {
-        margin-left: -228%
+        margin-left: -203%
     }
 }
 
@@ -1416,7 +1423,10 @@ body {
     height: 50px;
     background: #fff;
     border-radius: 50%;
+    padding: 10px;
+    box-shadow: 1px 1px 5px #bfbfbf;
 }
+
 .mygalla_buy_head2 {
     display: flex;
     gap: 10px;
@@ -1428,6 +1438,9 @@ body {
     width: 30px;
     height: 30px;
     background: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px #bfbfbf;
 }
 .head-small{
     padding: 10px;
@@ -1462,6 +1475,105 @@ body {
 }
 .span-head del{
     font-size: 13px;
+}
+.mygalla_buy_video_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+.mygalla_buy_video_img1 {
+    width: 105px;
+    height: 93px;
+    border: 1px solid gray;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.mygalla_buy_video_img1 img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.mygalla_buy_now_frame-wrapper h1{
+    color: var(--theme-color1);
+    text-align: center;
+    font-size: 37px;
+}
+.mygalla_buy_now_frame-wrapper b{
+    color: black;
+}
+.mygalla_buy_now_frame-wrapper p{
+    text-align: center;
+}
+.mygalla_buy_video_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 2rem 0px;
+}
+.mygalla_buy_item_box1 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.mygalla_buy_box_img1{
+    width: 53px;
+    height: 53px;
+    box-shadow: 0px 4px 4px 0px #00000080;
+    border-radius: 50%;
+    position: relative;
+    left: 34px;
+    background: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mygalla_buy_video_left{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 434px;
+}
+.mygalla_buy_iframe-wrap{
+    width: 567px;
+    height: 302px;
+    margin-bottom: 15px;
+}
+.mygalla_buy_iframe-wrap iframe{
+    width: 100%;
+    height: 100%;
+}
+.mygalla_buy_now_frame-wrapper{
+    background: #43AB131A;
+    padding: 10px;
+
+}
+.mygalla_buy_item_box1 p{
+    height: 54px;
+    display: flex;
+    align-items: center;
+    background: var(--theme-color1);
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 32px;
+    width: 81%;
+    font-weight: 700;
+    border-radius: 15px;
+    text-align: left;
+}
+.mygalla_buy_box_img1 img{
+    width: 100%;
+    height: 100%;
+}
+.mygalla_buy_head_img img{
+    width: 100%;
+    height: 100%;
+}
+.mygalla_buy_img1 img{
+    width: 100%;
+    height: 100%;
 }
 @media(max-width:500px) {
     .mygalla_buy_plans{
@@ -1509,5 +1621,63 @@ body {
     }
     .mygalla_buy_benefits h1{
             font-size: 37px;
+    }
+    .mygalla_buy_iframe-wrap{
+        width: 343px;
+        height: 173px;    
+    }
+    .mygalla_buy_video_img{
+        padding-bottom: 26px;
+    }
+    .mygalla_buy_video_img1{
+        width: 77px;
+        height: 75px;
+    
+    }
+    .mygalla_buy_item_box1 p{
+        width: 100%;
+        position: relative;
+        left: -13px;
+    }
+    .mygalla_buy_box_img1{
+        z-index: 1;
+        position: unset;
+    }
+    .mygalla_buy_item_box1{
+        gap: 0;
+    }
+    .mygalla_buy_video_right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .mygalla_buy_video_wrap{
+        padding: 1rem 0px;
+    }
+    .mygalla_buy_now_frame-wrapper h1{
+        font-size: 32px;
+
+    }
+    .coustomer-support{
+        padding: 1rem 0px;
+    }
+    .why-galla h2{
+        font-size: 28px;
+    }
+    .contact-section, .mygalla_our-clients{
+        padding: 1rem 0px;
+    }
+    .mygalla_buy_plan_box{
+        gap: 30px;
+    }
+    .mygalla_buy_plan1{
+        width: 88%;
+    }
+    .mygalla_buy_head1{
+        gap: 46px;
+    }
+    .span-head{
+        justify-content: center;
     }
 }
