@@ -7,8 +7,10 @@
   <title>My Galla</title>
   <meta name="description" content="Let&#039;s Grow Togther With Kalam Academy Learn Digital Marketing In Ranchi. Start &amp; Scale Your Business. Kalam Academy is Digital Marketing Institute &amp; Agency Based Out Of Ranchi" />
   <meta name="keywords" content="my galla , grocery" />
-  <link rel="preload" href="Assests/img/mygalla_home-img.webp" as="mygalla_imgs">
+  <link rel="preload" href="Assests/img/mygalla_home-img.webp" as="image">
   <link rel="stylesheet" href="Assests/css/style.css" />
+  <script src="https://www.youtube.com/iframe_api"></script>
+
 </head>
 
 <body>
@@ -42,10 +44,11 @@
     <div class="product-video-form">
       <div class="product-video">
         <!-- <img class="lazyload" src="Assests/img/placeholder1.gif" loading="lazy" decoding="async" data-src="Assests/img/yt1.webp" alt="mygalla_imgs"> -->
-        <iframe loading="lazyload"  width="560" height="315" src="https://www.youtube.com/embed/VCqrHmI5qMw?si=Uh1dwL9TD0zcbloP"
+         <div id="player1"></div>
+        <!-- <iframe loading="lazyload"  width="560" height="315" src="https://www.youtube.com/embed/VCqrHmI5qMw?si=Uh1dwL9TD0zcbloP"
           title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
       </div>
       <div class="product-form" id="demo">
         <form action="">
@@ -342,10 +345,12 @@
         Hear it from the people who have experienced the change with MyGalla
       </p>
       <div class="support-yt">
-        <iframe loading="lazyload"  width="560" height="315" src="https://www.youtube.com/embed/QbBpo1zv3TM?si=sZ1tQgWWqOgWhOPb"
+        <div id="player2"></div>
+
+        <!-- <iframe loading="lazyload"  width="560" height="315" src="https://www.youtube.com/embed/QbBpo1zv3TM?si=sZ1tQgWWqOgWhOPb"
           title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
       </div>
       <div class="scroller-review">
 
@@ -472,10 +477,12 @@
           <div class="mygalla_journey-right">
             <div class="mygalla_journey-img-wrap">
               <!-- <img class="lazyload" src="Assests/img/placeholder1.gif" loading="lazy" decoding="async" data-src="Assests/img/mygalla_timeline2.png" alt="mygalla_imgs"> -->
-              <iframe loading="lazyload"  width="560" height="315" src="https://www.youtube.com/embed/mrnB45pgnH8?si=KVF_BX9JAmpzNfiX"
+              <!-- <iframe loading="lazyload"  width="560" height="315" src="https://www.youtube.com/embed/mrnB45pgnH8?si=KVF_BX9JAmpzNfiX"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+                <div id="player3"></div>
+
             </div>
           </div>
           <div class="mygalla_journey-left">
@@ -1179,7 +1186,88 @@
 
     </div>
   </div>
-  <script src="Assests/js/main.js"></script>
+ 
+  <script src="Assests/js/main.js" defer></script>
+  <script>
+              
+    let ashInterval;
+    let count1 = 0;
+    //QbBpo1zv3TM
+    const players = [
+        { id: 'player1', videoId: 'VCqrHmI5qMw', player: null },
+        { id: 'player2', videoId: 'QbBpo1zv3TM', player: null },
+        { id: 'player3', videoId: 'h9oxAnkCjkU', player: null },
+  
+        
+    ];
+    
+    function onYouTubeIframeAPIReady() {
+        players.forEach(item => {
+            item.player = new YT.Player(item.id, {
+                height: '315',
+                width: '560',
+                videoId: item.videoId,
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+        });
+    }
+    
+    
+    function onPlayerReady(event) {
+        const player = event.target;
+        player.mute();
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                const playerId = entry.target.id;
+                const playerData = players.find(item => item.id === playerId);
+    
+                if (entry.isIntersecting && playerData) {
+                    playerData.player.playVideo();
+                    ashInterval = setInterval(()=>{
+                        if ( checkElement(document.getElementById(playerData.id)) ) {
+                            playerData.player.unMute();
+                            playerData.player.playVideo();
+                            if (playerData.player.getPlayerState() == 1) {
+                                count1++;
+                                if(count1 == 5) {
+                                    clearInterval(ashInterval);
+                                    count1 = 1 ;
+                                }
+                            }
+                        } 
+                    },1000);
+                } else {
+                    playerData.player.pauseVideo();
+                }
+            });
+        }, { threshold: 0.5, passive: true });
+        observer.observe(player.getIframe());
+    }
+    
+    
+    function checkElement(el) {
+      var top = el.offsetTop;
+      var left = el.offsetLeft;
+      var width = el.offsetWidth;
+      var height = el.offsetHeight;
+    
+      while(el.offsetParent) {
+        el = el.offsetParent;
+        top += el.offsetTop;
+        left += el.offsetLeft;
+      }
+    
+      return (
+        top >= window.pageYOffset &&
+        left >= window.pageXOffset &&
+        (top + height) <= (window.pageYOffset + window.innerHeight) &&
+        (left + width) <= (window.pageXOffset + window.innerWidth)
+      );
+    }
+    
+  </script> 
 </body>
 
 </html>
