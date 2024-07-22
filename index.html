@@ -15,6 +15,7 @@
 
 <body>
   <div class="main">
+    <button id="myButton" onclick="clickbtn()" >clicked</button>
     <div class="nav">
       <div class="nav1">
         <img class="lazyload" src="Assests/img/placeholder1.gif" loading="lazy" decoding="async" data-src="Assests/img/mygalla_logo.png" alt="mygalla_imgs" />
@@ -1186,8 +1187,26 @@
 
     </div>
   </div>
- 
-  <script src="Assests/js/main.js" defer></script>
+ <script>
+  function clickbtn(){
+    // alert();
+  }
+     document.addEventListener("DOMContentLoaded", function(e) {
+          //  console.log("hello");
+            document.getElementById('myButton').click();
+              setTimeout(() => {
+                document.getElementById('myButton').click();
+                  
+              }, 6000);
+           
+      });
+      // window.onload = function() {
+      //     var button = document.getElementById('myButton');
+      //     button.onclick = function() {
+      //         alert('Button was clicked!');
+      //     };
+      // };
+ </script>
   <script>
               
     let ashInterval;
@@ -1268,6 +1287,8 @@
     }
     
   </script> 
+    <script src="Assests/js/main.js" defer></script>
+
 </body>
 
 </html>
