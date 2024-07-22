@@ -49,8 +49,8 @@ body {
 }
 
 :root {
-    /* --theme-color1: #43ab13 */
-    --theme-color1: #006615
+    --theme-color1: #43ab13
+    /* --theme-color1: #006615 */
 }
 
 * {
@@ -115,7 +115,7 @@ body {
     flex-wrap: wrap;
     padding-bottom: 2rem;
     height: 600px;
-    flex-wrap: wrap-reverse
+    flex-wrap: wrap
 }
 
 .product-right-section {
@@ -136,6 +136,7 @@ body {
 
 .mygalla_buy_plan1 h2,
 .product-left-text p {
+    padding-bottom: 4px;
     font-size: 18px
 }
 
@@ -156,9 +157,10 @@ body {
 
 .product-left-text button {
     background-color: var(--theme-color1);
-    padding: 8px 23px;
+    padding: 10px 23px;
     color: #fff;
     border: none;
+    font-size: 15px;
     border-radius: 8px
 }
 
@@ -239,6 +241,7 @@ body {
     flex-direction: column;
     align-items: baseline;
     gap: 5px;
+    padding-top: 7px;
     padding-left: 23px
 }
 
@@ -338,24 +341,31 @@ body {
 }
 
 .left-text-galla p {
+    padding-left: 19px;
     text-align: start
 }
 
 .left-text-galla button {
-    padding: 10px 15px;
+    padding: 11px 19px;
     color: #fff;
+    font-size: 15px;
     border: none;
     border-radius: 7px;
     z-index: 1
 }
-
+.text-galla-head h3{
+    font-size: 25px;
+}
+.text-galla-head small{
+    font-size: 14px;
+}
 .right-img-galla {
     width: 239px;
-    height: 416px
+    height: 444px
 }
 
 .text-img {
-    border: 2px solid var(--theme-color1);
+    border: 3px solid var(--theme-color1);
     border-radius: 50%;
     width: 70px;
     height: 70px;
@@ -518,17 +528,17 @@ body {
 }
 
 .navigation-btn {
-    border: 2px solid var(--theme-color1);
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
     width: 15px;
     height: 15px;
-    transition: 1s
+    transition: 1s;
+    background: #e1e1e1
 }
 
 .navigation-btn:not(:last-child) {
-    margin-right: 40px
+    margin-right: 13px;
 }
 
 #radio1:checked~.first {
@@ -657,6 +667,8 @@ body {
 }
 
 .mygalla_title {
+    
+    height: 164px;
     width: 188px;
     padding: 10px;
     border-top-left-radius: 13px;
@@ -679,12 +691,12 @@ body {
 
 .mygalla_title span {
     background: #fff;
-    color: #000;
+    color: var(--theme-color1);
     padding: 3px 18px;
-    font-size: 12px;
+    font-size: 14px;
     border-radius: 4px;
     box-shadow: 2px 2px 4px #606060ad;
-    font-weight: 600
+    font-weight: 900;
 }
 
 .mygalla_buy_buisness_img_wrap,
@@ -784,6 +796,7 @@ body {
     display: flex;
     width: 100%;
     gap: 20px;
+    align-items: center;
     border-bottom: 1px solid #d4d4d4
 }
 
@@ -1026,7 +1039,13 @@ body {
     }
 
     .product-left-text h1 {
-        font-size: 49px
+        font-size: 31px
+    }
+    .product-left-text h1 br{
+        display: none;
+    }
+    .product-left-text{
+        gap: 11px;
     }
 
     .after-galla-detail-wrap {
@@ -1067,6 +1086,7 @@ body {
 
     .left-text-galla {
         padding-left: 22px;
+        padding-right: 16px;
         width: auto
     }
 
@@ -1083,6 +1103,7 @@ body {
         top: -89px;
         right: auto
     }
+    
 
     .footer {
         padding: 20px 15px 103px;
@@ -1090,12 +1111,12 @@ body {
     }
 
     .foot-left {
-        gap: 27px;
+        gap: 14px;
         padding: 0
     }
 
     .foot-left-first-main {
-        gap: 27px
+        gap: 15px
     }
 
     .foot-right {
@@ -1209,7 +1230,24 @@ body {
         justify-content: center;
         background-color: var(--theme-color1) !important
     }
+    .product-form form h2 {
+        font-size: 19px;
+    }
+    .product-form form .inp1 label {
+        padding-bottom: 5px;
+        font-size: 14px;
+    }
+    .product-form form .inp1 input{
+        font-size: 14px;
+    }
 
+    
+    .coustomer-support h2{
+        font-size: 35px;
+    }
+    .what-galla h2, .why-galla h2 {
+        font-size: 38px;
+    }
     .ancor-demo p {
         height: 100%;
         display: flex;
@@ -1257,6 +1295,10 @@ body {
     .product-form {
         width: 415px
     }
+    .mygalla_title {
+    
+        height: auto;
+    }
 
     @media(max-width:500px) {
         .mygalla_title {
@@ -1282,6 +1324,12 @@ body {
 
     #radio4:checked~.first {
         margin-left: -228%
+    }
+    .coustomer-support{
+       font-size: 18px;
+    }
+    .second-scroll-div p{
+        text-align: start;
     }
 }
 
