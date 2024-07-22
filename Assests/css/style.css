@@ -43,11 +43,14 @@ body {
 
 @font-face {
     font-family: nirmala;
-    src: url(../font/Nirmala.ttf)
+    /* src: url(../font/Nirmala.ttf) */
+    src: url('../font/Nirmala.woff') format('woff');
+    
 }
 
 :root {
-    --theme-color1: #43ab13
+    /* --theme-color1: #43ab13 */
+    --theme-color1: #006615
 }
 
 * {
@@ -221,7 +224,7 @@ body {
     padding: 8px;
     width: 313px;
     outline: 0;
-    color: #777
+    color: #575757
 }
 
 .product-form form button {
