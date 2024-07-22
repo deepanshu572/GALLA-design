@@ -8,9 +8,13 @@
     <meta name="keywords" content="my galla , grocery" />
     <link rel="preload" href="Assests/img/mygalla_home-img.webp" as="mygalla_imgs">
     <link rel="stylesheet" href="Assests/css/style.css" />
+    <script src="https://www.youtube.com/iframe_api"></script>
+
 </head>
 <body>
     <div class="main buynow_page">
+      <button id="myButton" onclick="clickbtn()" style="position: absolute; opacity: 0;" >clicked</button>
+
         <div class="nav">
           <div class="nav1">
             <img class="lazyload" src="Assests/img/placeholder1.gif" loading="lazy" decoding="async" data-src="Assests/img/mygalla_logo.png" alt="mygalla_imgs" />
@@ -311,7 +315,8 @@
         <div class="mygalla_buy_video_wrap">
           <div class="mygalla_buy_video_right">
             <div class="mygalla_buy_iframe-wrap">
-            <iframe loading="lazyload" title="mygalla_yt_video"  width="560" height="315" src="https://www.youtube.com/embed/mrnB45pgnH8?si=OkRwmIaF6SVRPWFp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div id="player1"></div>
+            <!-- <iframe loading="lazyload" title="mygalla_yt_video"  width="560" height="315" src="https://www.youtube.com/embed/mrnB45pgnH8?si=OkRwmIaF6SVRPWFp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
           </div>
             <div class="mygalla_buy_video_img">
               <div class="mygalla_buy_video_img1">
@@ -363,10 +368,11 @@
             10+ successful customers ka MyGalla pe 8 year ka bharosa.
          </p>
           <div class="support-yt">
-            <iframe  loading="lazyload"  width="560" height="315" src="https://www.youtube.com/embed/QbBpo1zv3TM?si=sZ1tQgWWqOgWhOPb"
+            <div id="player2"></div>
+            <!-- <iframe loading="lazyload"  width="560" height="315" src="https://www.youtube.com/embed/QbBpo1zv3TM?si=sZ1tQgWWqOgWhOPb"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
           </div>
           <div class="scroller-review">
     
@@ -1088,6 +1094,99 @@
     
         </div>
         </div>
+        <script>
+          function clickbtn(){
+            // alert();
+          }
+             document.addEventListener("DOMContentLoaded", function(e) {
+                  //  console.log("hello");
+                    document.getElementById('myButton').click();
+                      setTimeout(() => {
+                        document.getElementById('myButton').click();
+                          
+                      }, 6000);
+                   
+              });
+         </script>
+          <script>
+                      
+            let ashInterval;
+            let count1 = 0;
+            //QbBpo1zv3TM
+            const players = [
+                { id: 'player1', videoId: 'mrnB45pgnH8', player: null },
+                { id: 'player2', videoId: 'QbBpo1zv3TM', player: null },
+          
+                
+            ];
+            
+            function onYouTubeIframeAPIReady() {
+                players.forEach(item => {
+                    item.player = new YT.Player(item.id, {
+                        height: '315',
+                        width: '560',
+                        videoId: item.videoId,
+                        events: {
+                            'onReady': onPlayerReady
+                        }
+                    });
+                });
+            }
+            
+            
+            function onPlayerReady(event) {
+                const player = event.target;
+                player.mute();
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        const playerId = entry.target.id;
+                        const playerData = players.find(item => item.id === playerId);
+            
+                        if (entry.isIntersecting && playerData) {
+                            playerData.player.playVideo();
+                            ashInterval = setInterval(()=>{
+                                if ( checkElement(document.getElementById(playerData.id)) ) {
+                                    playerData.player.unMute();
+                                    playerData.player.playVideo();
+                                    if (playerData.player.getPlayerState() == 1) {
+                                        count1++;
+                                        if(count1 == 5) {
+                                            clearInterval(ashInterval);
+                                            count1 = 1 ;
+                                        }
+                                    }
+                                } 
+                            },1000);
+                        } else {
+                            playerData.player.pauseVideo();
+                        }
+                    });
+                }, { threshold: 0.5, passive: true });
+                observer.observe(player.getIframe());
+            }
+            
+            
+            function checkElement(el) {
+              var top = el.offsetTop;
+              var left = el.offsetLeft;
+              var width = el.offsetWidth;
+              var height = el.offsetHeight;
+            
+              while(el.offsetParent) {
+                el = el.offsetParent;
+                top += el.offsetTop;
+                left += el.offsetLeft;
+              }
+            
+              return (
+                top >= window.pageYOffset &&
+                left >= window.pageXOffset &&
+                (top + height) <= (window.pageYOffset + window.innerHeight) &&
+                (left + width) <= (window.pageXOffset + window.innerWidth)
+              );
+            }
+            
+          </script> 
         <script src="Assests/js/main.js"></script>
 
 </body>
