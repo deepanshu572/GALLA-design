@@ -908,7 +908,11 @@ body {
     gap: 23px;
     padding: 23px
 }
-
+ .mygalla_buy_buisness_img_wrapper p{
+    font-weight: 600;
+    color: var(--theme-color1);
+    text-transform: capitalize;
+ }
 .footleft1 svg {
     width: 165px;
     height: 64px
@@ -1417,7 +1421,7 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background: #43aB131A;
+    /* background: #43aB131A; */
     padding: 1rem
 }
 
@@ -1440,6 +1444,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 1px 1px 9px #d3d3d3;
     width: 257px
 }
 
@@ -1743,6 +1748,8 @@ body {
     }
 
     .mygalla_buy_box_img1 {
+        width: 62px;
+    height: 53px;
         z-index: 1;
         position: unset
     }
