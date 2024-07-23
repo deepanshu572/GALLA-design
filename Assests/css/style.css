@@ -234,6 +234,7 @@ body {
     color: #fff;
     border: none;
     border-radius: 8px;
+    font-size: 18px;
     width: 314px
 }
 
@@ -398,8 +399,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 149px; */
-    width: 41vw;
+    width: 149px;
     justify-content: center;
     box-shadow: 0 4px 25px 0 #5e940040;
     border-radius: 5px
@@ -774,6 +774,7 @@ body {
     width: 100%;
     height: 100%;
     fill: var(--theme-color1)
+    
 }
 
 .contact-detail1 span {
@@ -1016,6 +1017,9 @@ body {
 }
 
 @media(max-width:800px) {
+    .second{
+        margin-left: 27%;
+    }
     .product-right-section {
         height: 237px
     }
@@ -1052,6 +1056,10 @@ body {
     }
     .product-left-text{
         gap: 11px;
+    }
+    .mygalla_our-client-img{
+        width: 57px;
+        height: 57px;
     }
 
     .after-galla-detail-wrap {
@@ -1170,7 +1178,7 @@ body {
 
     .navigation {
         width: 100%;
-        margin-top: -25px;
+        margin-top: -3px;
         left: 0
     }
 
@@ -1178,26 +1186,47 @@ body {
         margin: auto
     }
 
+    .mygalla_our-client-box-wrap{
+        width: 414px;
+        flex-wrap: wrap;
+    }
     .imgs_slides {
-        height: 251px;
-        overflow-x: scroll
+        height: 251px
+        /* overflow-x: scroll */
+    }
+    .btn-demo{
+        position: relative;
+        top: -10px;
+        /* left: 165px; */
+        font-size: 20px;
+        background: var(--theme-color1);
+        border: none;
+        padding: 9px 9px;
+        width: 161px;
+        margin: auto;
+        display: block;
+        color: #fff;
+        border-radius: 7px;
+        text-transform: capitalize;
     }
 
-    #radio6:checked~.second,
+    #radio6:checked~.second{
+       margin-left: 27%;
+    }
     .mygalla_our-clients .first {
         margin-left: 31%
     }
 
     #radio7:checked~.second {
-        margin-left: -50%
+        margin-left: -21%
     }
 
     #radio8:checked~.second {
-        margin-left: -150%
+        margin-left: -69%
     }
 
     #radio9:checked~.second {
-        margin-left: -223%
+        margin-left: -118%
     }
 
     .bottom-detail p {
@@ -1221,6 +1250,9 @@ body {
     .support-p {
         width: 356px;
         padding: 10px 0
+    }
+    .mygalla_our-clients{
+        padding: 0rem 0 !important;
     }
 
     .reverse-section .mygalla_desc p {
@@ -1298,8 +1330,9 @@ body {
     }
 
     .bottom-right-icon1 {
-        width: 35px;
-        height: 35px
+        width: 45px;
+        height: 45px;
+        padding: 11px;
     }
 
     .product-form {
@@ -1309,7 +1342,16 @@ body {
     
         height: auto;
     }
-
+    .after-galla-box{
+        width: 41vw;
+    }
+    .mygalla_our-client-box1{
+        width: 103px;
+        height: 101px;
+    }
+    .mygalla_our-clients .imgs_slides{
+    height: 330px !important;
+    }
     @media(max-width:500px) {
         .mygalla_title {
             width: 164px !important
