@@ -1198,11 +1198,11 @@ body {
         position: relative;
         top: -10px;
         /* left: 165px; */
-        font-size: 20px;
+        font-size: 18px;
         background: var(--theme-color1);
         border: none;
-        padding: 9px 9px;
-        width: 161px;
+        padding: 8px 6px;
+        width: 147px;
         margin: auto;
         display: block;
         color: #fff;
@@ -1375,7 +1375,7 @@ body {
     }
 
     #radio4:checked~.first {
-        margin-left: -228%
+        margin-left: -209%
     }
     .coustomer-support{
        font-size: 18px;
