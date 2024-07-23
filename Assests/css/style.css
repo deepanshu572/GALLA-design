@@ -1445,7 +1445,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 1px 1px 9px #d3d3d3;
+    /* box-shadow: 1px 1px 9px #d3d3d3; */
     width: 257px
 }
 
@@ -1466,22 +1466,23 @@ body {
 }
 
 .mygalla_buy_top_wrap {
-    /* width: 146px; */
-    width: 38vw;
+    width: 146px;
+    /* width: 38vw; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background: #c8c8c8;
     gap: 15px;
+    box-shadow: 1px 1px 9px #d3d3d3;
     padding-top: 13px
 }
 
 .mygalla_buy_box1 small {
     background: #fff;
     padding: 8px 9px;
-    /* width: 146px; */
-    width: 100%;
+    width: 146px;
+    /* width: 100%; */
     text-align: center;
     font-size: 13px;
     height: 45px;
@@ -1702,6 +1703,13 @@ body {
         height: 307px
     }
 
+    .mygalla_buy_top_wrap {
+        width: 38vw;
+    }
+    .mygalla_buy_box1 small
+    {
+        width: 100%;
+    }
     .mygalla_buy_buisness_img_wrap {
         row-gap: 24px
     }
