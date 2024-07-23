@@ -995,7 +995,7 @@ body {
 .foot-last-icon1 {
     width: auto;
     justify-content: center;
-    padding: 0 2px 7px
+    padding: 0px 9px 6px
 }
 
 .ancor-wrap {
@@ -1388,8 +1388,13 @@ body {
         width: 415px
     }
     .mygalla_title {
+
         height: 191px;
         /* height: auto; */
+    }
+    .mygalla_buy_buisness_section p{
+        width: 345px;
+        padding: 15px 0px;
     }
     .footleft1 p{
         font-size: 14px;
