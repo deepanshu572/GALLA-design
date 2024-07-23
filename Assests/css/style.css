@@ -47,8 +47,16 @@ body {
 }
 
 :root {
-    --theme-color1: #43ab13
-        /* --theme-color1: #006615 */
+    /* --theme-color1: #43ab13 */
+        /* --theme-color1: #43ab13 */
+    /* --theme-color1: #0A5c16 */
+    /* --theme-color1: #0b6521 */
+    /* --theme-color1: #295700 */
+    /* --theme-color1: #00610a */
+    /* --theme-color1: #2a6600 */
+    /* --theme-color1: #00660f */
+    /* --theme-color1: #0b6600 */
+        --theme-color1: #006615
 }
 
 * {
@@ -357,7 +365,7 @@ body {
     font-size: 15px;
     border: none;
     border-radius: 7px;
-   margin-left: 17px;
+   /* margin-left: 17px; */
 }
 
 .text-galla-head h3 {
@@ -979,7 +987,7 @@ body {
 .foot-last-icon1 {
     width: auto;
     justify-content: center;
-    padding: 0 9px 6px
+    padding: 0 0px 5px
 }
 
 .foot-last-icon1 a {
@@ -1041,6 +1049,9 @@ body {
 
 .product-right-section img {
     object-fit: contain !important
+}
+.left-text-galla a{
+    text-decoration: none;
 }
 
 @media(max-width:800px) {
@@ -1273,15 +1284,21 @@ body {
         color: #fff !important;
         border-radius: 30px !important;
         rotate: 0deg !important;
-        height: 50px !important;
+        height: 41px !important;
         font-size: 23px;
-        width: 178px !important;
+        width: 169px !important;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: var(--theme-color1) !important
     }
 
+    .left-text-galla a{
+        width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
     .product-form form h2 {
         font-size: 19px
     }
@@ -1316,7 +1333,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 23px
+        font-size: 19px
     }
 
     .foot-last .ancor-wrap {
