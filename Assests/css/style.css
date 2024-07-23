@@ -202,6 +202,12 @@ body {
     font-size: 16px;
     font-weight: 900
 }
+.mygalla_journey-right{
+    width: 100%;
+}
+.reverse-section .mygalla_journey-right{
+    width: auto;
+}
 
 .contact-detail-div,
 .footleft3,
@@ -525,9 +531,13 @@ body {
 .navigation {
     position: absolute;
     width: 900px;
-    margin-top: -40px;
+    margin-top: -25px;
     display: flex;
     justify-content: center
+}
+.btn-demo {
+    position: relative;
+    top: -39px !important;
 }
 
 .navigation-btn {
@@ -643,10 +653,9 @@ body {
     align-items: center;
     gap: 16px;
 }
-.mygalla_journey-right{
-    width: 100%;
-}
+
 .reverse-section {
+    align-items: end;
     justify-content: flex-end
 }
 
@@ -664,7 +673,9 @@ body {
 }
 .reverse-section .mygalla_journey-left{
     flex-direction: row-reverse;
+    justify-content: end;
 }
+
 
 .mygalla_desc,
 .mygalla_title {
@@ -868,6 +879,7 @@ body {
 
 .foot-left-second-main {
     display: flex;
+    justify-content: space-between;
     gap: 204px
 }
 
@@ -883,9 +895,7 @@ body {
 .footleft3 {
     gap: 6px
 }
-.footleft1 p{
-    font-size: 14px;
-}
+
 
 .foot-right {
     align-items: baseline;
@@ -949,6 +959,24 @@ body {
     left: -97px;
     top: -6px
 }
+.btn-demo{
+    position: relative;
+    /* top: -10px; */
+    top: -18px !important;
+
+    /* left: 165px; */
+    font-size: 18px;
+    background: var(--theme-color1);
+    border: none;
+    padding: 8px 6px;
+    width: 147px;
+    margin: auto;
+    display: block;
+    color: #fff;
+    border-radius: 7px;
+    text-transform: capitalize;
+}
+
 
 .footleft1 p {
     padding-top: 9px;
@@ -1141,6 +1169,9 @@ body {
         right: auto
     }
     
+    .mygalla_journey-right{
+        width: 100%;
+    }
 
     .footer {
         padding: 20px 15px 103px;
@@ -1176,9 +1207,13 @@ body {
     }
 
     .mygalla_journey-img-wrap {
-        top: 0;
+        /* top: 0;
         width: 90%;
-        height: 149px
+        height: 149px */
+        width: 100%;
+        height: 175px;
+        position: relative;
+        top: -7px;
     }
 
     .mygalla_desc {
@@ -1213,24 +1248,7 @@ body {
         height: 251px
         /* overflow-x: scroll */
     }
-    .btn-demo{
-        position: relative;
-        /* top: -10px; */
-        top: -18px;
-
-        /* left: 165px; */
-        font-size: 18px;
-        background: var(--theme-color1);
-        border: none;
-        padding: 8px 6px;
-        width: 147px;
-        margin: auto;
-        display: block;
-        color: #fff;
-        border-radius: 7px;
-        text-transform: capitalize;
-    }
-
+   
     #radio6:checked~.second{
        margin-left: 27%;
     }
@@ -1361,13 +1379,20 @@ body {
         height: 45px;
         padding: 11px;
     }
+    .reverse-section .mygalla_journey-left{
+        width: 100%;
+        justify-content: space-between;
+    }
 
     .product-form {
         width: 415px
     }
     .mygalla_title {
-    
-        height: auto;
+        height: 191px;
+        /* height: auto; */
+    }
+    .footleft1 p{
+        font-size: 14px;
     }
     .after-galla-box{
         width: 41vw;
