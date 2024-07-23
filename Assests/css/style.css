@@ -1393,7 +1393,7 @@ body {
         /* height: auto; */
     }
     .mygalla_buy_buisness_section p{
-        width: 345px;
+        /* width: 345px; */
         padding: 15px 0px;
     }
     .footleft1 p{
@@ -1502,7 +1502,9 @@ body {
     background: #d9d9d9;
     gap: 8px;
     border-radius: 9px;
-    padding: 4px 11px
+    padding: 4px 11px;
+    align-items: center;
+    height: 36px
 }
 
 .mygalla_buy_buisness_small_img {
