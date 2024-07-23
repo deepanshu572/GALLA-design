@@ -243,6 +243,8 @@ body {
     gap: 5px;
     padding-top: 7px;
     /* padding-left: 23px */
+    width: 313px;
+    margin: auto;
 }
 
 .bottom-text a {
