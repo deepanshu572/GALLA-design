@@ -90,8 +90,7 @@ body {
 }
 
 .circle-div,
-.footleft1 span,
-.mygalla_journey-right {
+.footleft1 span{
     position: relative
 }
 
@@ -243,7 +242,7 @@ body {
     align-items: baseline;
     gap: 5px;
     padding-top: 7px;
-    padding-left: 23px
+    /* padding-left: 23px */
 }
 
 .bottom-text a {
@@ -356,7 +355,7 @@ body {
     z-index: 1
 }
 .text-galla-head h3{
-    font-size: 25px;
+    font-size: 23px;
 }
 .text-galla-head small{
     font-size: 14px;
@@ -632,10 +631,19 @@ body {
 .mygalla_journey-box1 {
     display: flex;
     justify-content: flex-start;
+    flex-direction: column;
     padding: 2rem 0;
     background: url(../img/mygalla_rocket-bg.png) center no-repeat
 }
-
+.mygalla_journey-left{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+.mygalla_journey-right{
+    width: 100%;
+}
 .reverse-section {
     justify-content: flex-end
 }
@@ -649,8 +657,11 @@ body {
     padding: 11px 10px
 }
 
-.reverse-section .mygalla_journey-left {
-    align-items: end
+.mygalla_journey-box1 .mygalla_journey-left{
+    flex-direction: row-reverse;
+}
+.reverse-section .mygalla_journey-left{
+    flex-direction: row-reverse;
 }
 
 .mygalla_desc,
@@ -710,7 +721,7 @@ body {
 }
 
 .mygalla_journey-img-wrap {
-    position: absolute;
+    /* position: absolute; */
     box-shadow: 0 4px 25px 0 #43aB1340;
     width: 333px;
     display: flex;
@@ -864,8 +875,14 @@ body {
     height: 13px
 }
 
+.footleft3 span{
+        font-size: 14px;
+}
 .footleft3 {
     gap: 6px
+}
+.footleft1 p{
+    font-size: 14px;
 }
 
 .foot-right {
@@ -1007,7 +1024,7 @@ body {
     width: 35px;
     height: 35px;
     background: #fff;
-    box-shadow: 2px 2px 4px gray;
+    box-shadow: 1px 1px 7px #c8c8c8;
     border-radius: 50%;
     padding: 7px
 }
@@ -1158,7 +1175,7 @@ body {
 
     .mygalla_journey-img-wrap {
         top: 0;
-        width: 175px;
+        width: 90%;
         height: 149px
     }
 
@@ -1196,7 +1213,9 @@ body {
     }
     .btn-demo{
         position: relative;
-        top: -10px;
+        /* top: -10px; */
+        top: -18px;
+
         /* left: 165px; */
         font-size: 18px;
         background: var(--theme-color1);
@@ -1295,12 +1314,18 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 18px
+        font-size: 23px;
     }
 
     .foot-last .ancor-wrap {
         padding: 0 !important;
         justify-content: flex-end
+    }
+    .footleft3 span {
+        font-size: 14px;
+    }
+    .footleft4 p{
+            font-size: 14px;
     }
 
     .foot-last {
@@ -1350,7 +1375,8 @@ body {
         height: 101px;
     }
     .mygalla_our-clients .imgs_slides{
-    height: 330px !important;
+    /* height: 330px !important; */
+    height: 278px !important;
     }
     @media(max-width:500px) {
         .mygalla_title {
@@ -1375,7 +1401,7 @@ body {
     }
 
     #radio4:checked~.first {
-        margin-left: -209%
+        margin-left: -184%
     }
     .coustomer-support{
        font-size: 18px;
@@ -1833,9 +1859,9 @@ body {
         padding: 1rem 0
     }
 
-    .why-galla h2 {
+    /* .why-galla h2 {
         font-size: 28px
-    }
+    } */
 
     .mygalla_buy_plan1 {
         width: 88%
