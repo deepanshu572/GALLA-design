@@ -397,7 +397,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 149px;
+    /* width: 149px; */
+    width: 41vw;
     justify-content: center;
     box-shadow: 0 4px 25px 0 #5e940040;
     border-radius: 5px
@@ -1343,7 +1344,7 @@ body {
     align-items: center;
     justify-content: space-between;
     background: #43aB131A;
-    flex-wrap: wrap-reverse
+    flex-wrap: wrap
 }
 
 .mygalla_buy_left-_section {
@@ -1465,7 +1466,8 @@ body {
 }
 
 .mygalla_buy_top_wrap {
-    width: 146px;
+    /* width: 146px; */
+    width: 38vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1478,7 +1480,8 @@ body {
 .mygalla_buy_box1 small {
     background: #fff;
     padding: 8px 9px;
-    width: 146px;
+    /* width: 146px; */
+    width: 100%;
     text-align: center;
     font-size: 13px;
     height: 45px;
