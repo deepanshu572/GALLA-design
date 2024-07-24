@@ -112,7 +112,8 @@ body {
 }
 
 .product-section {
-    background-color: #eff4e6;
+    /* background-color: #eff4e6; */
+    background: #e6f0e8;
     padding-top: 5rem;
     display: flex;
     align-items: center;
@@ -178,10 +179,13 @@ body {
 }
 
 .product-form {
-    background-color: #eff4e6;
-    box-shadow: 0 2px 25px 0 #5e940040;
-    padding: 30px 10px;
-    width: 380px
+       /* background-color: #eff4e6; */
+       background-color: #e6f0e8;
+       box-shadow: 0 2px 25px 0 #5e940040;
+       padding: 30px 10px;
+       width: 380px;
+       box-shadow: 0px 2px 15px 0px #43AB1326;
+       border-radius: 7px
 }
 
 .detail-galla,
@@ -232,6 +236,7 @@ body {
     font-size: 12px
 }
 
+
 .product-form form .inp1 input,
 .product-form form .inp1 select {
     border: none;
@@ -240,6 +245,7 @@ body {
     padding: 8px;
     width: 313px;
     outline: 0;
+    border: 0.5px solid var(--theme-color1);
     color: #575757
 }
 
@@ -394,7 +400,8 @@ body {
     height: 400px;
     width: 400px;
     position: absolute;
-    border: 45px solid #43aB131A;
+    border: 45px solid #e6f0e8;
+    /* border: 45px solid #43aB131A; */
     padding: 30px;
     border-radius: 50%;
     left: -333px;
@@ -540,7 +547,8 @@ body {
 .navigation {
     position: absolute;
     width: 900px;
-    margin-top: -25px;
+    /* margin-top: -25px; */
+    margin-top: -8px;
     display: flex;
     justify-content: center
 }
@@ -1052,6 +1060,7 @@ body {
 }
 .left-text-galla a{
     text-decoration: none;
+    z-index: 1;
 }
 
 @media(max-width:800px) {
@@ -1443,7 +1452,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #43aB131A;
+    background: #e6f0e8;;
     flex-wrap: wrap
 }
 
@@ -1459,7 +1468,7 @@ body {
 }
 
 .mygalla_buy_left-_section h1 b {
-    color: #43ab13
+    color: var(--theme-color1)
 }
 
 .mygalla_buy_left-_section p {
@@ -1471,7 +1480,7 @@ body {
 }
 
 .mygalla_buy_btns button {
-    background: #43ab13;
+    background: var(--theme-color1);
     border: none;
     padding: 8px 13px;
     color: #fff;
@@ -1503,13 +1512,14 @@ body {
 }
 
 .mygalla_buy_buisness_small_img {
-    width: 25px;
-    height: 25px
+    width: 29px;
+    height: 29px
 }
 
 .mygalla_buy_buisness_small_img img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     mix-blend-mode: darken
 }
 
@@ -1666,7 +1676,7 @@ body {
 
 .mygalla_buy_plan1 button {
     margin: 11px 0;
-    background: #43ab13;
+    background: var(--theme-color1);
     color: #fff;
     font-weight: 600;
     border: none;
