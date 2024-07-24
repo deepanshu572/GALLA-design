@@ -1041,6 +1041,8 @@ a{
     height: 41px;
     display: flex;
     align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
     justify-content: center
 }
 
