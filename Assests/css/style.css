@@ -543,7 +543,9 @@ body {
     transition: 1s cubic-bezier(.19, 1, .22, 1);
     margin: 10px
 }
-
+a{
+    text-decoration: none;
+}
 .navigation {
     position: absolute;
     width: 900px;
