@@ -2103,11 +2103,15 @@ border: none;
 @media(max-width:600px) {
     .mygala_buisness_thanks_text p{
         font-size: 15px;
+        font-weight: 700;
     }
 .mygala_buisness_thanks_text small{
     width: auto;
     font-size: 13px;
 
+}
+.mygala_buisness_thanks_text{
+    padding: 0px 10px;
 }
 }
 
