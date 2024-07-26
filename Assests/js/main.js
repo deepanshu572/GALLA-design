@@ -15,3 +15,4 @@
       imageObserver.observe(image);
     });
   });
+
