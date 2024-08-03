@@ -1606,7 +1606,21 @@ a{
     color: var(--theme-color1)
 }
 
+.Online.Billing.Software1 img {
+    width: 100%;
+    height: 100%;
+}
 
+.Online.Billing.Software1 {
+    width: 25px;
+}
+.Online.Billing.Software {
+    width: 41px;
+}
+.Online.Billing.Software img {
+    width: 100%;
+    height: 100%;
+}
 
 .mygalla_buy_plans {
     display: flex;
