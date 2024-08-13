@@ -416,8 +416,8 @@ body {
 }
 
 .right-img-galla {
-    width: 395px;
-    height: 688px;
+    width: 390px;
+    height: 670px;
 }
 
 .text-img {
@@ -432,18 +432,19 @@ body {
     height: 600px;
     width: 600px;
     position: absolute;
-    border: 80px solid #e6f0e8;
+    border: 100px solid #e6f0e8;
     /* border: 45px solid #43aB131A; */
     padding: 30px;
     border-radius: 50%;
-    left: -504px;
+    left: -456px;
     top: -89px;
 }
-
+.reverse .left-text-galla {
+    padding-left: 1px;
+}
 .reverse .circle-div .circle {
-    right: -391px;
+    left:-28px;
     top: -42px;
-    left: 0
 }
 
 .box-galla {
