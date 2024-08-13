@@ -383,7 +383,7 @@ body {
 .left-text-galla {
     align-items: baseline;
     gap: 17px;
-    padding-left: 124px;
+    padding-left: 54px;
     width: 500px
 }
 
@@ -418,6 +418,11 @@ body {
 .right-img-galla {
     width: 390px;
     height: 670px;
+    position: relative;
+    left: -39px;
+}
+.reverse .right-img-galla {
+    left: 39px;
 }
 
 .text-img {
@@ -440,7 +445,7 @@ body {
     top: -89px;
 }
 .reverse .left-text-galla {
-    padding-left: 1px;
+    padding-left: 46px;
 }
 .reverse .circle-div .circle {
     left:-28px;
