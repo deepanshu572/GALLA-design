@@ -289,10 +289,21 @@ body {
 .detail-galla {
     align-items: center;
     justify-content: space-around;
-    padding: 53px 64px;
-    flex-wrap: wrap
+    padding: 53px 53px;
+    flex-wrap: wrap;
+    gap: 78px;
 }
-
+.galla-img{
+    width: 70px !important;
+    height: 70px !important;
+}
+.galla-text small {
+    font-size: 20px !important;
+}
+.galla-text b {
+    font-size: 25px 
+    !important;
+}
 .galla-img,
 .text-img {
     background: #fff;
@@ -334,7 +345,7 @@ body {
 
 .what-galla h2,
 .why-galla h2 {
-    font-size: 40px
+    font-size: 60px
 }
 
 .why-galla h2 {
@@ -511,7 +522,7 @@ body {
 
 .coustomer-support h2 {
     font-weight: 900;
-    font-size: 38px
+    font-size: 60px
 }
 
 .support-yt {
@@ -790,7 +801,7 @@ a{
 .mygalla_our-journey h2 {
     text-align: center;
     font-weight: 900;
-    font-size: 36px
+    font-size: 60px;
 }
 
 .mygalla_journey-img-wrap img {
@@ -869,13 +880,13 @@ a{
 }
 
 .contact-section h2 {
-    font-size: 37px;
+    font-size: 60px;
     font-weight: 800;
     color: var(--theme-color1)
 }
 
 .mygalla_our-clients h2 {
-    font-size: 38px
+    font-size: 60px
 }
 
 .contact-section b,
