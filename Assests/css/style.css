@@ -357,6 +357,7 @@ body {
 }
 
 .what-galla p {
+    font-size: 20px;
     z-index: 1
 }
 
@@ -387,6 +388,7 @@ body {
 
 .left-text-galla p {
     padding-left: 19px;
+    
     text-align: start
 }
 
@@ -400,37 +402,41 @@ body {
 }
 
 .text-galla-head h3 {
-    font-size: 23px
+    font-size: 30px;
 }
 
 .footleft3 span,
 .text-galla-head small {
     font-size: 14px
+
+}
+.text-galla-head small {
+    font-size: 24px;
 }
 
 .right-img-galla {
-    width: 239px;
-    height: 444px
+    width: 395px;
+    height: 688px;
 }
 
 .text-img {
-    border: 3px solid var(--theme-color1);
+    border: 5px solid var(--theme-color1);
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    padding: 12px
+    width: 150px;
+    height: 150px;
+    padding: 32px;
 }
 
 .circle-div .circle {
-    height: 400px;
-    width: 400px;
+    height: 600px;
+    width: 600px;
     position: absolute;
-    border: 45px solid #e6f0e8;
+    border: 80px solid #e6f0e8;
     /* border: 45px solid #43aB131A; */
     padding: 30px;
     border-radius: 50%;
-    left: -333px;
-    top: -89px
+    left: -504px;
+    top: -89px;
 }
 
 .reverse .circle-div .circle {
@@ -1090,6 +1096,7 @@ a{
 .left-text-galla a{
     text-decoration: none;
     z-index: 1;
+    padding-left: 20px;
 }
 
 @media(max-width:800px) {
