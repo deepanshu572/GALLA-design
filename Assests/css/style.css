@@ -117,13 +117,13 @@ body {
 .product-section {
     /* background-color: #eff4e6; */
     background: #e6f0e8;
-    padding-top: 5rem;
+    padding-top: 0rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
     padding-bottom: 2rem;
-    height: 600px;
+    height: 700px;
     flex-wrap: wrap
 }
 .product-video{
