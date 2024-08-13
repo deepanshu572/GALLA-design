@@ -342,6 +342,9 @@ body {
 .span-head del {
     font-size: 13px
 }
+.second-scroll-div p{
+    font-size: 20px;
+}
 
 .what-galla h2,
 .why-galla h2 {
@@ -353,14 +356,17 @@ body {
 }
 
 .what-galla {
-    padding: 3rem 0
+    padding: 3rem 0;
+    padding-bottom: 0;
 }
 
 .what-galla p {
     font-size: 20px;
     z-index: 1
 }
-
+.support-p{
+    font-size:25px;
+}
 .box1-galla {
     justify-content: space-around;
     flex-wrap: wrap
@@ -394,9 +400,9 @@ body {
 }
 
 .left-text-galla button {
-    padding: 11px 19px;
+    padding: 6px 25px;
     color: #fff;
-    font-size: 15px;
+    font-size: 25px;
     border: none;
     border-radius: 7px;
    /* margin-left: 17px; */
@@ -487,10 +493,12 @@ body {
 }
 
 .first-scroll-div img{
-    width: 50px;
-    height: 50px
+    width: 70px;
+    height: 70px
 }
-
+.first-scroll-div h3 {
+    font-size: 25px;
+}
 .after-galla-detail-wrap {
     display: flex;
     align-items: center;
@@ -534,7 +542,11 @@ body {
     align-items: center;
     justify-content: center;
     padding: 1rem 0;
-    gap: 1px
+    gap: 5px
+}
+.support-yt iframe{
+    width: 600px;
+    height: 300px;
 }
 
 .coustomer-support h2 {
@@ -547,13 +559,13 @@ body {
 }
 
 .scroller1-box {
-    width: 268px;
+    width: 350px;
     border-radius: 0 20px;
     box-shadow: 0 4px 11px 0 #5e940040;
     padding: 10px;
     display: inline-block;
     white-space: normal;
-    height: 181px
+    height: 225px;
 }
 
 .contact-section {
@@ -583,7 +595,7 @@ body {
 
 .slide {
     transition: 1s cubic-bezier(.19, 1, .22, 1);
-    margin: 10px
+    margin: 10px 30px;
 }
 a{
     text-decoration: none;
@@ -693,7 +705,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    gap: 9px;
+    gap: 5px;
     padding: 6px 0
 }
 
@@ -1013,13 +1025,17 @@ a{
     font-size: 18px;
     background: var(--theme-color1);
     border: none;
-    padding: 8px 6px;
-    width: 147px;
+
     margin: auto;
     display: block;
     color: #fff;
     border-radius: 7px;
-    text-transform: capitalize
+    text-transform: capitalize;
+    padding: 6px 25px;
+    color: #fff;
+    font-size: 25px;
+    border: none;
+    border-radius: 7px;
 }
 
 .footleft1 p {
