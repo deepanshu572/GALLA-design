@@ -368,6 +368,7 @@ body {
 
 .text-first-section {
     gap: 16px;
+    width: 600px;
     z-index: 1
 }
 
