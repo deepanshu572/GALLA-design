@@ -68,19 +68,18 @@ body {
 
 .nav {
     padding: 10px 66px;
-    padding-left: 49px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-shadow: 2px 2px 3px #8c8c8c52;
     position: fixed;
     width: 100%;
-    z-index: 9;
-    height: 80px
+    z-index: 9
 }
 
 .nav1 {
-    width: 176px;
+    width: 108px;
+    height: 43px
 }
 
 .img-top-wrap img,
@@ -103,7 +102,7 @@ body {
 
 .nav2 {
     display: flex;
-    gap: 45px;
+    gap: 25px
 }
 
 .footleft3 a,
@@ -111,9 +110,7 @@ body {
     color: #fff;
     text-decoration: none
 }
-.nav2 a{
-    font-size: 24px;
-}
+
 .product-section {
     /* background-color: #eff4e6; */
     background: #e6f0e8;
@@ -128,8 +125,8 @@ body {
 }
 
 .product-right-section {
-    width: 653px;
-    height: 461px;
+    width: 550px;
+    height: 347px
 }
 
 .product-left-text {
@@ -140,11 +137,9 @@ body {
 }
 
 .product-left-text h1 {
-    font-size: 66px;
+    font-size: 59px
 }
-.product-left-text p{
-    font-size: 22px;
-}
+
 .mygalla_buy_plan1 h2,
 .product-left-text p {
     padding-bottom: 4px;
@@ -171,7 +166,7 @@ body {
     padding: 10px 23px;
     color: #fff;
     border: none;
-    font-size:21px;
+    font-size: 15px;
     border-radius: 8px
 }
 
