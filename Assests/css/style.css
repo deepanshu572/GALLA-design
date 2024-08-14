@@ -1866,6 +1866,9 @@ a{
     border-radius: 15px;
     text-align: left
 }
+.footleft4{
+    width: 35%;
+}
 
 @media(max-width:500px) {
     .mygalla_buy_plans {
