@@ -988,7 +988,7 @@ a{
 
 .btn-demo {
     position: relative;
-    top: -18px !important;
+    top: -31px !important;
     font-size: 18px;
     background: var(--theme-color1);
     border: none;
@@ -999,6 +999,9 @@ a{
     color: #fff;
     border-radius: 7px;
     text-transform: capitalize
+}
+.scroller-review .navigation{
+    margin-top: -20px !important;
 }
 
 .footleft1 p {
@@ -1287,7 +1290,9 @@ a{
         top: 92%;
         left: 0
     }
-
+    .scroller-review .navigation{
+        margin-top: -3px !important;
+    }
     .mygalla_our-client-box-wrap {
         margin: auto;
         width: 414px;
