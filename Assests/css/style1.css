@@ -714,7 +714,7 @@ a{
     justify-content: flex-start;
     flex-direction: column;
     padding: 2rem 0;
-    background: url(../img/mygalla_rocket-bg.png) center no-repeat
+    /* background: url(../img/mygalla_rocket-bg.png) center no-repeat */
 }
 
 .mygalla_journey-left {
@@ -2077,6 +2077,14 @@ a{
     background: #171717c2;
     /* padding: 3rem; */
     margin-top: 42px;
+}
+.journey_img_bg{
+    position: relative;
+    z-index: -1;
+}
+.journey_img_bg img{
+    position: absolute;
+    width: 70vw;
 }
 .mygalla_buisness_gallery {
        /* display: inline-flex; */

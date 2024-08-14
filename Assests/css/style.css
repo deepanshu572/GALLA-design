@@ -659,8 +659,16 @@ a{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    padding: 2rem 0;
-    background: url(../img/mygalla_rocket-bg.png) center no-repeat
+    padding: 2rem 0
+    /* background: url(../img/mygalla_rocket-bg.png) center no-repeat */
+}
+.journey_img_bg{
+    position: relative;
+    z-index: -1;
+}
+.journey_img_bg img{
+    position: absolute;
+    width: 70vw;
 }
 
 .mygalla_journey-left {
@@ -677,8 +685,11 @@ a{
 
 .reverse-section .mygalla_desc {
     border-top-left-radius: 13px;
-    border-top-right-radius: 0
+    border-top-right-radius: 0;
+    width:563px
+
 }
+
 
 .reverse-section .mygalla_desc p {
     padding: 11px 10px
@@ -715,8 +726,8 @@ a{
     border-top-left-radius: 13px;
     justify-content: center;
     flex-direction: column;
-    box-shadow: 1px 1px 8px #d2d2d2;
-    box-shadow: 1px -1px 6px #d2d2d2;
+    /* box-shadow: 1px 1px 8px #d2d2d2;
+    box-shadow: 1px -1px 6px #d2d2d2; */
     gap: 10px
 }
 
@@ -725,7 +736,7 @@ a{
     padding: 24px 23px;
     border-bottom-left-radius: 13px;
     border-bottom-right-radius: 13px;
-    box-shadow: 1px 4px 8px #d2d2d2;
+    box-shadow: 1px 8px 8px #d2d2d2;
     justify-content: center;
     height: 134px
 }
@@ -737,7 +748,10 @@ a{
     font-size: 14px;
     border-radius: 4px;
     box-shadow: 2px 2px 4px #606060ad;
-    font-weight: 900
+    font-weight: 900;
+    width: 109.65px;
+    height: 24.4px;
+    text-align: center
 }
 
 .mygalla_buy_buisness_img_wrap,
@@ -748,16 +762,18 @@ a{
     flex-wrap: wrap
 }
 
-.mygalla_journey-img-wrap {
+.mygalla_journey-img-wrap {    
     box-shadow: 0 4px 25px 0 #43aB1340;
-    width: 333px;
+    width: 365px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 17px;
-    height: 145px;
-    top: 3px;
-    right: 0;
+    height: 157px;
+    position: relative;
+    top: -6px;
+    right: 6px;
+    border-radius: 20px;
     border-radius: 20px;
     background: #ffff
 }
@@ -776,7 +792,7 @@ a{
 .mygalla_our-journey h2 {
     text-align: center;
     font-weight: 900;
-    font-size: 36px
+    font-size: 40px
 }
 
 .mygalla_journey-img-wrap img {
@@ -1067,6 +1083,13 @@ a{
     z-index: 1;
 }
 
+.reverse-section .mygalla_title{
+    width: 173px;
+}
+.reverse-section .mygalla_desc{
+    width: 553px;
+}
+
 @media(max-width:800px) {
 
     #radio6:checked~.second,
@@ -1220,7 +1243,7 @@ a{
     }
 
     .mygalla_desc {
-        width: auto;
+        width: auto !important;
         height: 200px
     }
 
@@ -1396,7 +1419,7 @@ a{
     }
 
     .mygalla_title {
-        height: 191px
+        height: 197px
     }
 
     .mygalla_buy_buisness_section p {
@@ -1928,6 +1951,9 @@ a{
         height: 320px;
 
     }
+    .mygalla_our-journey h2 {
+        font-size: 36px;
+    }
 }
 
 
@@ -2127,6 +2153,14 @@ border: none;
 }
 .mygala_buisness_thanks_text{
     padding: 0px 10px;
+}
+.mygalla_journey-left{
+    gap: 23px;
+}
+.reverse_section_text_img_section{
+    left: 7px;
+    width: 52vw;
+
 }
 }
 
