@@ -68,19 +68,18 @@ body {
 
 .nav {
     padding: 10px 66px;
-    padding-left: 49px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-shadow: 2px 2px 3px #8c8c8c52;
     position: fixed;
     width: 100%;
-    z-index: 9;
-    height: 80px
+    z-index: 9
 }
 
 .nav1 {
-    width: 176px;
+    width: 108px;
+    height: 43px
 }
 
 .img-top-wrap img,
@@ -103,7 +102,7 @@ body {
 
 .nav2 {
     display: flex;
-    gap: 45px;
+    gap: 25px
 }
 
 .footleft3 a,
@@ -111,32 +110,23 @@ body {
     color: #fff;
     text-decoration: none
 }
-.nav2 a{
-    font-size: 24px;
-}
+
 .product-section {
     /* background-color: #eff4e6; */
     background: #e6f0e8;
-    padding-top: 0rem;
+    padding-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
     padding-bottom: 2rem;
-    height: 700px;
+    height: 600px;
     flex-wrap: wrap
 }
-.product-video{
-    height: 339px;
-    width: 709px;
-}
-.product-video iframe{
-    width: 100%;
-    height: 100%;
-}
+
 .product-right-section {
-    width: 653px;
-    height: 461px;
+    width: 550px;
+    height: 347px
 }
 
 .product-left-text {
@@ -147,11 +137,9 @@ body {
 }
 
 .product-left-text h1 {
-    font-size: 66px;
+    font-size: 59px
 }
-.product-left-text p{
-    font-size: 22px;
-}
+
 .mygalla_buy_plan1 h2,
 .product-left-text p {
     padding-bottom: 4px;
@@ -178,7 +166,7 @@ body {
     padding: 10px 23px;
     color: #fff;
     border: none;
-    font-size:21px;
+    font-size: 15px;
     border-radius: 8px
 }
 
@@ -221,7 +209,7 @@ body {
 }
 
 .product-form form h2 {
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 900
 }
 
@@ -245,7 +233,7 @@ body {
 
 .product-form form .inp1 label {
     padding-bottom: 3px;
-    font-size: 16px;
+    font-size: 12px
 }
 
 
@@ -258,9 +246,7 @@ body {
     width: 313px;
     outline: 0;
     border: 0.5px solid var(--theme-color1);
-    color: #575757;
-    height: 44px;
-    font-size: 14px;
+    color: #575757
 }
 
 .product-form form button {
@@ -289,21 +275,10 @@ body {
 .detail-galla {
     align-items: center;
     justify-content: space-around;
-    padding: 53px 53px;
-    flex-wrap: wrap;
-    gap: 78px;
+    padding: 53px 64px;
+    flex-wrap: wrap
 }
-.galla-img{
-    width: 70px !important;
-    height: 70px !important;
-}
-.galla-text small {
-    font-size: 20px !important;
-}
-.galla-text b {
-    font-size: 25px 
-    !important;
-}
+
 .galla-img,
 .text-img {
     background: #fff;
@@ -342,13 +317,10 @@ body {
 .span-head del {
     font-size: 13px
 }
-.second-scroll-div p{
-    font-size: 20px;
-}
 
 .what-galla h2,
 .why-galla h2 {
-    font-size: 60px
+    font-size: 40px
 }
 
 .why-galla h2 {
@@ -356,17 +328,13 @@ body {
 }
 
 .what-galla {
-    padding: 3rem 0;
-    padding-bottom: 0;
+    padding: 3rem 0
 }
 
 .what-galla p {
-    font-size: 20px;
     z-index: 1
 }
-.support-p{
-    font-size:25px;
-}
+
 .box1-galla {
     justify-content: space-around;
     flex-wrap: wrap
@@ -374,7 +342,6 @@ body {
 
 .text-first-section {
     gap: 16px;
-    width: 600px;
     z-index: 1
 }
 
@@ -389,73 +356,62 @@ body {
 .left-text-galla {
     align-items: baseline;
     gap: 17px;
-    padding-left: 54px;
+    padding-left: 124px;
     width: 500px
 }
 
 .left-text-galla p {
     padding-left: 19px;
-    
     text-align: start
 }
 
 .left-text-galla button {
-    padding: 6px 25px;
+    padding: 11px 19px;
     color: #fff;
-    font-size: 25px;
+    font-size: 15px;
     border: none;
     border-radius: 7px;
    /* margin-left: 17px; */
 }
 
 .text-galla-head h3 {
-    font-size: 30px;
+    font-size: 23px
 }
 
 .footleft3 span,
 .text-galla-head small {
     font-size: 14px
-
-}
-.text-galla-head small {
-    font-size: 24px;
 }
 
 .right-img-galla {
-    width: 390px;
-    height: 670px;
-    position: relative;
-    left: -39px;
-}
-.reverse .right-img-galla {
-    left: 39px;
+    width: 239px;
+    height: 444px
 }
 
 .text-img {
-    border: 5px solid var(--theme-color1);
+    border: 3px solid var(--theme-color1);
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    padding: 32px;
+    width: 70px;
+    height: 70px;
+    padding: 12px
 }
 
 .circle-div .circle {
-    height: 600px;
-    width: 600px;
+    height: 400px;
+    width: 400px;
     position: absolute;
-    border: 100px solid #e6f0e8;
+    border: 45px solid #e6f0e8;
     /* border: 45px solid #43aB131A; */
     padding: 30px;
     border-radius: 50%;
-    left: -456px;
-    top: -89px;
+    left: -333px;
+    top: -89px
 }
-.reverse .left-text-galla {
-    padding-left: 46px;
-}
+
 .reverse .circle-div .circle {
-    left:-28px;
+    right: -391px;
     top: -42px;
+    left: 0
 }
 
 .box-galla {
@@ -466,20 +422,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 187px;
-    height: 162px;
-    gap: 11px;
-    justify-content: start;
+    width: 149px;
+    justify-content: center;
     box-shadow: 0 4px 25px 0 #5e940040;
-    border-radius: 5px;
+    border-radius: 5px
 }
 
 .top-detail {
     background: #c8c8c8;
     width: 100%;
-    padding: 29px 10px;
-    justify-content: center;
-    height: 90px;
+    padding: 14px 10px;
+    justify-content: center
 }
 
 .bottom-detail {
@@ -492,19 +445,18 @@ body {
     height: 51px
 }
 
-.first-scroll-div img{
-    width: 70px;
-    height: 70px
+.first-scroll-div img,
+.img-top-wrap {
+    width: 50px;
+    height: 50px
 }
-.first-scroll-div h3 {
-    font-size: 25px;
-}
+
 .after-galla-detail-wrap {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 26px 10px;
-    gap: 90px;
+    gap: 64px;
     flex-wrap: wrap
 }
 
@@ -515,9 +467,7 @@ body {
     background: #fff;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 70px;
-    height: 70px;
+    justify-content: center
 }
 
 .first-scroll-div img {
@@ -531,7 +481,7 @@ body {
 }
 
 .bottom-detail p {
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 700;
     color: var(--theme-color1)
 }
@@ -542,16 +492,12 @@ body {
     align-items: center;
     justify-content: center;
     padding: 1rem 0;
-    gap: 5px
-}
-.support-yt iframe{
-    width: 600px;
-    height: 300px;
+    gap: 1px
 }
 
 .coustomer-support h2 {
     font-weight: 900;
-    font-size: 60px
+    font-size: 38px
 }
 
 .support-yt {
@@ -559,13 +505,13 @@ body {
 }
 
 .scroller1-box {
-    width: 350px;
+    width: 268px;
     border-radius: 0 20px;
     box-shadow: 0 4px 11px 0 #5e940040;
     padding: 10px;
     display: inline-block;
     white-space: normal;
-    height: 225px;
+    height: 181px
 }
 
 .contact-section {
@@ -595,7 +541,7 @@ body {
 
 .slide {
     transition: 1s cubic-bezier(.19, 1, .22, 1);
-    margin: 10px 30px;
+    margin: 10px
 }
 a{
     text-decoration: none;
@@ -705,7 +651,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    gap: 5px;
+    gap: 9px;
     padding: 6px 0
 }
 
@@ -730,7 +676,6 @@ a{
 }
 
 .reverse-section .mygalla_desc {
-    width: 805px;
     border-top-left-radius: 13px;
     border-top-right-radius: 0
 }
@@ -758,49 +703,41 @@ a{
 }
 
 .mygalla_title h3 {
-       /* width: 129px; */
-    /* margin: auto; */
-    text-align: center;
-    font-size: 25px;
+    width: 129px;
+    margin: auto;
+    text-align: center
 }
 
-.mygalla_desc p {
-    font-size: 25px;
-}
 .mygalla_title {
-    height: 273px;
-    width: 265px;
+    height: 164px;
+    width: 188px;
     padding: 10px;
     border-top-left-radius: 13px;
     justify-content: center;
     flex-direction: column;
     box-shadow: 1px 1px 8px #d2d2d2;
     box-shadow: 1px -1px 6px #d2d2d2;
-    gap: 10px;
+    gap: 10px
 }
 
 .mygalla_desc {
-    width: 753px;
+    width: 539px;
     padding: 24px 23px;
     border-bottom-left-radius: 13px;
     border-bottom-right-radius: 13px;
     box-shadow: 1px 4px 8px #d2d2d2;
     justify-content: center;
-    height: 206px;
+    height: 134px
 }
 
 .mygalla_title span {
     background: #fff;
     color: var(--theme-color1);
     padding: 3px 18px;
-    font-size: 25px;
+    font-size: 14px;
     border-radius: 4px;
     box-shadow: 2px 2px 4px #606060ad;
-    font-weight: 900;
-    /* width: 155px; */
-    width: 169px;
-
-    text-align: center;
+    font-weight: 900
 }
 
 .mygalla_buy_buisness_img_wrap,
@@ -813,17 +750,16 @@ a{
 
 .mygalla_journey-img-wrap {
     box-shadow: 0 4px 25px 0 #43aB1340;
-    width: 524px;
+    width: 333px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 17px;
-    height: 247px;
-    position: relative;
-    top: -7px;
+    height: 145px;
+    top: 3px;
     right: 0;
     border-radius: 20px;
-    background: #ffff;
+    background: #ffff
 }
 
 .contact-detail1 .mygalla_img {
@@ -840,7 +776,7 @@ a{
 .mygalla_our-journey h2 {
     text-align: center;
     font-weight: 900;
-    font-size: 60px;
+    font-size: 36px
 }
 
 .mygalla_journey-img-wrap img {
@@ -851,16 +787,15 @@ a{
 
 .mygalla_img {
     margin: auto;
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 25px 0 #00000040;
     border-radius: 50%;
-    padding: 25px;
-    background: #fff;
-    overflow: unset;
+    padding: 10px;
+    background: #fff
 }
 
 .mygalla_journey-box-wrap {
@@ -920,13 +855,13 @@ a{
 }
 
 .contact-section h2 {
-    font-size: 60px;
+    font-size: 37px;
     font-weight: 800;
     color: var(--theme-color1)
 }
 
 .mygalla_our-clients h2 {
-    font-size: 60px
+    font-size: 38px
 }
 
 .contact-section b,
@@ -1036,17 +971,13 @@ a{
     font-size: 18px;
     background: var(--theme-color1);
     border: none;
-
+    padding: 8px 6px;
+    width: 147px;
     margin: auto;
     display: block;
     color: #fff;
     border-radius: 7px;
-    text-transform: capitalize;
-    padding: 6px 25px;
-    color: #fff;
-    font-size: 25px;
-    border: none;
-    border-radius: 7px;
+    text-transform: capitalize
 }
 
 .footleft1 p {
@@ -1134,12 +1065,9 @@ a{
 .left-text-galla a{
     text-decoration: none;
     z-index: 1;
-    padding-left: 20px;
 }
 
-
 @media(max-width:800px) {
-
 
     #radio6:checked~.second,
     .second {
