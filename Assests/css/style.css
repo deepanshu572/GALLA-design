@@ -74,12 +74,12 @@ body {
     box-shadow: 2px 2px 3px #8c8c8c52;
     position: fixed;
     width: 100%;
-    z-index: 9
+    z-index: 9;
+    height: 62px;
 }
 
 .nav1 {
-    width: 108px;
-    height: 43px
+    width: 125px
 }
 
 .img-top-wrap img,
@@ -107,6 +107,7 @@ body {
 
 .footleft3 a,
 .nav2 a {
+    font-size: 16px;
     color: #fff;
     text-decoration: none
 }
@@ -246,11 +247,12 @@ body {
     width: 313px;
     outline: 0;
     border: 0.5px solid var(--theme-color1);
-    color: #575757
+    color: #575757;
+    height: 40px;
 }
 
 .product-form form button {
-    padding: 10px;
+    padding: 8px 10px;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -526,6 +528,7 @@ body {
 
 .slider {
     width: 800px;
+    position: relative;
     border-radius: 10px
 }
 
@@ -552,7 +555,8 @@ a{
     /* margin-top: -25px; */
     margin-top: -8px;
     display: flex;
-    justify-content: center
+    justify-content: center;
+   
 }
 
 .navigation-btn {
@@ -621,7 +625,8 @@ a{
     width: 900px;
     display: flex;
     align-items: end;
-    padding: 0 0 2rem
+    padding: 0 0 2rem;
+    height: 299px;
 }
 
 .mygalla_our-client-box1 {
@@ -976,7 +981,7 @@ a{
 }
 
 .footleft1 span {
-    font-size: 14px;
+    font-size: 16px;
     left: -97px;
     top: -6px
 }
@@ -1002,7 +1007,7 @@ a{
 }
 
 .footleft2 p {
-    font-size: 14px;
+    font-size: 16px;
     padding: 5px 0
 }
 
@@ -1011,7 +1016,7 @@ a{
 }
 
 .foot-last-icon1 {
-    width: auto;
+    /* width: auto; */
     justify-content: center;
     padding: 0 0px 5px
 }
@@ -1165,7 +1170,7 @@ a{
 
     .detail-galla {
         padding: 35px 9px;
-        gap: 15px
+        gap: 28px
     }
 
     .footleft1,
@@ -1185,15 +1190,33 @@ a{
     .left-text-galla {
         padding-left: 22px;
         padding-right: 16px;
-        width: auto
+        width: auto;
+        padding-bottom: 20px;
     }
-
-    .box1-galla {
+    .what-galla{
+        padding: 40px 0px;
+    }
+    /* .box1-galla {
         padding-top: 1rem
+    } */
+    .box-galla{
+        gap: 15px;
+        padding-bottom: 40px;
+    }
+    .coustomer-support{
+        padding: 40px 0 !important;
+        padding-bottom: 15px !important;
+
     }
 
     .reverse {
         flex-direction: column-reverse
+    }
+    .scroller-review .navigation{
+        top: 94%;
+    }
+    .scroller-review .imgs_slides{
+        height: 271px;
     }
 
     .reverse .circle-div .circle {
@@ -1230,9 +1253,11 @@ a{
     }
 
     .product-video-form {
-        padding: 3rem 1rem;
+        padding: 2rem 1rem;
         flex-wrap: wrap;
-        gap: 36px
+        gap: 30px;
+        padding-top: 0rem;
+        padding-bottom: 40px;
     }
 
     .mygalla_journey-img-wrap {
@@ -1259,6 +1284,7 @@ a{
     .navigation {
         width: 100%;
         margin-top: -3px;
+        top: 92%;
         left: 0
     }
 
@@ -1266,6 +1292,9 @@ a{
         margin: auto;
         width: 414px;
         flex-wrap: wrap
+    }
+    .contact-section{
+        padding-top: 27px;
     }
 
     .imgs_slides {
@@ -1312,21 +1341,24 @@ a{
         padding: 0 !important
     }
 
-    .reverse-section .mygalla_desc p {
-        font-size: 17px
+    .mygalla_desc p {
+        font-size: 15px
+    }
+    .mygalla_journey-box1{
+        padding: 20px 0px;
     }
 
     .ancor-demo {
         color: #fff !important;
         border-radius: 30px !important;
         rotate: 0deg !important;
-        height: 41px !important;
-        font-size: 23px;
+        height: 45px !important;
+        font-size: 24px;
         width: 169px !important;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: var(--theme-color1) !important
+        background-color: var(--theme-color1) !important;
     }
 
     .left-text-galla a{
@@ -1348,7 +1380,7 @@ a{
     .footleft3 span,
     .footleft4 p,
     .product-form form .inp1 input {
-        font-size: 14px
+        font-size: 16px
     }
 
     .mygalla_buy_buisness_tab {
@@ -1369,14 +1401,14 @@ a{
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 19px
+        font-size: 23px;
     }
 
     .foot-last .ancor-wrap {
         padding: 0 !important;
         justify-content: flex-end
     }
-
+   
     .foot-last {
         position: fixed;
         bottom: 0;
@@ -1471,6 +1503,9 @@ a{
 
     .second-scroll-div p {
         text-align: start
+    }
+    .mygalla_buy_plan_box{
+        padding-bottom: 0;
     }
 }
 
@@ -1635,7 +1670,12 @@ a{
 }
 
 .Online.Billing.Software1 {
-    width: 25px;
+    width: 35px;
+    background: #fff;
+    border-radius: 50%;
+    height: 35px;
+    padding: 6px;
+    box-shadow: 1px 1px 5px #bfbfbf;
 }
 .Online.Billing.Software {
     width: 41px;
@@ -1829,7 +1869,8 @@ a{
 
 @media(max-width:500px) {
     .mygalla_buy_plans {
-        padding: 2rem 4px
+        padding: 2rem 4px;
+        padding-top: 0;
     }
 
     .mygalla_buy_hero_section {
@@ -1842,7 +1883,8 @@ a{
     }
 
     .mygalla_buy_buisness_section {
-        padding: 2rem 0
+        padding: 2rem 0;
+        padding-bottom: 20px;
     }
 
     .mygalla_buy_buisness_section h1,
@@ -1928,6 +1970,12 @@ a{
         align-items: center;
         width: 100%
     }
+    .contact-detail1_phone{
+        border:none
+    }
+    .contact-detail-div{
+        padding: 0;
+    }
 
     .contact-section,
     .coustomer-support,
@@ -1954,6 +2002,19 @@ a{
     .mygalla_our-journey h2 {
         font-size: 36px;
     }
+    .foot-last-icon1{
+        padding: 0px 6px 5px;
+    }
+    .bottom-right{
+        padding: 0;
+    }
+    .top-right p{
+        font-size: 16px;
+    }
+    
+}
+.nav2 a{
+    font-size: 18px !important;
 }
 
 
